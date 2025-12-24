@@ -140,5 +140,5 @@ The system integrates a multi-layered approach to project discovery and manageme
 
 ## Author
 
-Developed by Aditya Adi & Anirudh C
+Developed by Aditya Adi 
 GitHub: [https://github.com/AdityaAdi07](https://github.com/AdityaAdi07)
