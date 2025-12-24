@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+chromadb
+sentence-transformers
+numpy
+scikit-learn
+pymongo
+python-dotenv
+openai>=1.86.0

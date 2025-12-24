@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard · RVCE DBMS</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="./assets/rvce-portal.js"></script>
+    <script src="./assets/dashboard.js" defer></script>
+</head>
+<body>
+    <header class="navbar enhanced">
+        <div class="brand">
+            <span class="brand-accent"></span>
+            <span class="brand-text">RVCE . DBMS <span class="brand-separator">|</span> RAG Platform</span>
+        </div>
+        <div class="actions">
+            <div class="user-auth-info">
+                <span class="auth-badge" title="JWT Token Authenticated">
+                    <span class="auth-icon">🔒</span>
+                    <span class="auth-status">Secure</span>
+                </span>
+                <div class="user-pill-container">
+                    <span id="user-pill" class="pill user-pill-enhanced"></span>
+                </div>
+            </div>
+            <button id="logout-btn" class="ghost logout-btn-enhanced" type="button">
+                <span class="btn-text">Logout</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-shell compact">
+        <section class="hero-banner">
+            <div class="hero-content">
+                <div class="hero-badge-wrapper">
+                    <span class="badge badge-large">
+                        <span class="badge-icon">⚡</span>
+                        RAG-Powered Intelligence
+                    </span>
+                </div>
+                <h1 class="hero-title">RVCE DBMS<br/>Project Discovery</h1>
+                <p class="hero-description">Search projects semantically, analyze synopses with AI, and explore repository insights in one unified platform.</p>
+            </div>
+            <div class="hero-metrics" id="hero-metrics">
+                <article class="metric-card metric-primary">
+                    <div class="metric-icon">📊</div>
+                    <div class="metric-content">
+                        <p class="label">Total Projects</p>
+                        <p class="value" id="metric-total">—</p>
+                    </div>
+                </article>
+                <article class="metric-card metric-secondary">
+                    <div class="metric-icon">🏷️</div>
+                    <div class="metric-content">
+                        <p class="label">Top Domains</p>
+                        <p class="value" id="metric-domains">—</p>
+                    </div>
+                </article>
+                <article class="metric-card metric-tertiary">
+                    <div class="metric-icon">👥</div>
+                    <div class="metric-content">
+                        <p class="label">Frequent Teams</p>
+                        <p class="value" id="metric-teams">—</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section compact" id="student-info-section">
+            <div class="section-header">
+                <div>
+                    <h2>My Information</h2>
+                    <p class="text-muted">Your team details and search history.</p>
+                </div>
+                <div class="inline-group">
+                    <button id="refresh-student-info" class="secondary" type="button">Refresh</button>
+                    <div id="student-info-status" class="alert" hidden></div>
+                </div>
+            </div>
+            <div class="grid-responsive">
+                <article class="panel">
+                    <h3>Team Details</h3>
+                    <div id="team-details-container">
+                        <div class="empty-state">Loading team information...</div>
+                    </div>
+                </article>
+                <article class="panel">
+                    <h3>Recent Search History</h3>
+                    <div id="search-history-container">
+                        <div class="empty-state">Loading search history...</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section compact" id="projects-section">
+            <div class="section-header">
+                <div>
+                    <h2>Repository Statistics</h2>
+                    <p class="text-muted">Live metrics from MongoDB projects collection.</p>
+                </div>
+                <button id="refresh-summary" class="secondary" type="button">Refresh</button>
+            </div>
+            <div class="grid-responsive">
+                <article class="panel">
+                    <h3>Domain distribution</h3>
+                    <ul id="domain-list" class="list-compact"></ul>
+                </article>
+                <article class="panel">
+                    <h3>Popular tech stack tags</h3>
+                    <ul id="tech-list" class="tag-column"></ul>
+                </article>
+                <article class="panel">
+                    <h3>Year-wise publications</h3>
+                    <div id="year-bars" class="bar-stack"></div>
+                </article>
+            </div>
+            <div class="panel frequent-panel">
+                <div class="section-header tight">
+                    <h3>Frequently referenced projects</h3>
+                    <span class="text-muted">Top titles by occurrences</span>
+                </div>
+                <table class="table dense" id="freq-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                            <th>Domain</th>
+                            <th>Team</th>
+                            <th>Occurrences</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section compact" id="search-section">
+            <div class="section-header">
+                <div>
+                    <h2>Semantic Project Search</h2>
+                    <p class="text-muted">Search by title using vector similarity. Returns top-k matches with detailed scores.</p>
+                </div>
+                <div class="inline-group">
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-analyze" />
+                        <span class="slider"></span>
+                    </label>
+                    <span class="switch-label">Auto open details</span>
+                </div>
+            </div>
+            <form id="search-form" class="form-inline" novalidate>
+                <input id="search-query" type="text" placeholder="e.g. Instagram reach analysis" required />
+                <input id="search-topk" type="number" min="1" max="10" value="5" />
+                <button class="primary" id="search-btn" type="submit">Search</button>
+                <div id="search-status" class="alert" hidden></div>
+            </form>
+            <table class="table dense" id="search-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Project Title</th>
+                        <th>Domain</th>
+                        <th>Overall</th>
+                        <th>Title</th>
+                        <th>Desc</th>
+                        <th>Tech</th>
+                        <th>Objective</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section class="section synopsis-section-prominent" id="synopsis-section">
+            <div class="section-header prominent-header">
+                <div>
+                    <h2 class="synopsis-title">Synopsis Section</h2>
+                    <p class="text-muted synopsis-subtitle">Write your project synopsis manually or upload a PDF file. The synopsis will be saved to your student project.</p>
+                </div>
+            </div>
+            <form id="synopsis-form" class="synopsis-form-grid" novalidate>
+                <div class="field-group compact">
+                    <div class="form-field-enhanced">
+                        <label for="syn-title">
+                            <span class="label-icon">📝</span>
+                            Title <span style="color: var(--danger-500);">*</span>
+                        </label>
+                        <input id="syn-title" name="title" type="text" placeholder="e.g., Plant Disease Detection using OpenCV" required />
+                    </div>
+                    <div class="form-field-enhanced">
+                        <label for="syn-domain">
+                            <span class="label-icon">🏷️</span>
+                            Domain <span style="color: var(--danger-500);">*</span>
+                        </label>
+                        <input id="syn-domain" name="domain" type="text" placeholder="e.g., Artificial Intelligence / Agriculture" required />
+                    </div>
+                </div>
+                <div class="field-group compact">
+                    <div class="form-field-enhanced">
+                        <label for="syn-tech">
+                            <span class="label-icon">⚙️</span>
+                            Tech Stack <span style="color: var(--danger-500);">*</span>
+                        </label>
+                        <input id="syn-tech" name="tech_stack" type="text" placeholder="e.g., OpenCV, Python, Image Processing" required />
+                    </div>
+                    <div class="form-field-enhanced">
+                        <label for="syn-objective">
+                            <span class="label-icon">🎯</span>
+                            Objective <span style="color: var(--danger-500);">*</span>
+                        </label>
+                        <input id="syn-objective" name="objective" type="text" placeholder="e.g., Detect early plant diseases using visual analysis" required />
+                    </div>
+                </div>
+                <div class="form-field-enhanced">
+                    <label for="syn-description">
+                        <span class="label-icon">📄</span>
+                        Description <span style="color: var(--danger-500);">*</span>
+                    </label>
+                    <textarea id="syn-description" name="description" rows="6" placeholder="Enter your project synopsis here... Provide a clear, concise description of your project idea, objectives, methodology, and expected outcomes." required></textarea>
+                </div>
+                <div class="form-field-enhanced">
+                    <label>
+                        <span class="label-icon">📎</span>
+                        Or Upload PDF File
+                    </label>
+                    <div class="file-upload-wrapper">
+                        <input id="syn-pdf-file" name="pdf_file" type="file" accept=".pdf" />
+                        <label for="syn-pdf-file" class="file-upload-label">
+                            <span class="file-upload-icon">📄</span>
+                            <span class="file-upload-text">Choose PDF file or drag and drop</span>
+                        </label>
+                        <div id="pdf-file-info" class="file-info" hidden></div>
+                    </div>
+                </div>
+                <div class="form-action-bar">
+                    <button type="button" id="clear-synopsis" class="ghost">Clear</button>
+                    <button class="primary" id="submit-synopsis-btn" type="submit">
+                        <span class="btn-icon">💾</span>
+                        Submit Synopsis
+                    </button>
+                </div>
+                <div id="synopsis-status" class="alert" hidden></div>
+            </form>
+        </section>
+    </main>
+
+    <div class="modal-backdrop" id="modal-backdrop">
+        <div class="modal modal-lg" role="dialog" aria-modal="true">
+            <div class="modal-header">
+                <h3 id="modal-title">Project insight</h3>
+                <button class="secondary" id="modal-close" type="button">Close</button>
+            </div>
+            <div id="modal-content" class="modal-content"></div>
+        </div>
+    </div>
+</body>
+</html>
+

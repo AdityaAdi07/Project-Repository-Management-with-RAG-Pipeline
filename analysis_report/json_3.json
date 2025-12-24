@@ -1,0 +1,111 @@
+{
+    "query": "Real-Time Air Quality Monitoring System",
+    "timestamp": "2025-11-21 17:42:48.858712",
+    "results": [
+        {
+            "id": null,
+            "title": "Smart Farming and Agriculture",
+            "domain": "IoT / Embedded Systems",
+            "tech_stack": "Python with Keras for deep learning and TensorFlow for machine learning, Flask or Django as web frameworks, Scikit-learn for data preprocessing and analysis, OpenCV for computer vision tasks, SQLite or PostgreSQL for database management",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 17.73,
+            "sim_description": null,
+            "sim_tech_stack": 30.92,
+            "sim_objective": 22.11,
+            "doc_snippet": "Another excellent idea to work for enhancing the agricultural sector. You can work on developing gadgets or technology that will help farmers have insights about the soil and climate and plan their farming methods accordingly. IoT devices like detect"
+        },
+        {
+            "id": null,
+            "title": "Fitness Tracker App with Step Counter:",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Flutter, Firebase Cloud Firestore, Android Studio",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 14.29,
+            "sim_description": null,
+            "sim_tech_stack": 3.72,
+            "sim_objective": 18.59,
+            "doc_snippet": "Mobile app development is grabbing eyeballs, and a fitness tracker app is an ideal door into the scenario. Students can use any of the famous platforms, such as Flutter or Android Studio, to develop an application that tracks steps, calories burnt, a"
+        },
+        {
+            "id": null,
+            "title": "Rainfall Prediction system",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python, Flask (fallback)",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 28.02,
+            "sim_description": null,
+            "sim_tech_stack": 31.81,
+            "sim_objective": -2.73,
+            "doc_snippet": "This project aims to develop a model capable of predicting rainfall patterns in the future based on past meteorological data. Learners will get hands-on practice collecting and preprocessing meteorological data, using different machine learning algor"
+        },
+        {
+            "id": null,
+            "title": "Heart disease detection",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python, Scikit-learn, TensorFlow, Pandas, NumPy, Matplotlib, Seaborn, Plotly",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 29.52,
+            "sim_description": null,
+            "sim_tech_stack": 26.51,
+            "sim_objective": 27.21,
+            "doc_snippet": "The heart disease detection project aims to build a tool that will help users detect the presence of heart disease. It uses Python and the supervised learning technique of classification to accurately predict the presence of a heart disease based on "
+        },
+        {
+            "id": null,
+            "title": "A mobile or web application to track a user's carbon footprint",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python, Flask (fallback)",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 32.32,
+            "sim_description": null,
+            "sim_tech_stack": 31.81,
+            "sim_objective": -2.73,
+            "doc_snippet": "This project combines the knowledge of interface design, data management, and understanding of environmental science. The user input includes transportation data, energy consumption at home, diet, purchases made, etc. Based on these, carbon footprint"
+        },
+        {
+            "id": null,
+            "title": "Weather Forecasting Application",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python, Flask, Django, TensorFlow, PyTorch, PostgreSQL, MySQL, OpenWeatherMap, Dark Sky",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 31.7,
+            "sim_description": null,
+            "sim_tech_stack": 37.04,
+            "sim_objective": 19.57,
+            "doc_snippet": "For those proficient at data aggregation from multiple APIs, features of geospatial integration, data structures, ML technologies, and algorithms may work in designing weather forecasting apps. You should be able to analyze available data of a sample"
+        },
+        {
+            "id": null,
+            "title": "A Prediction Tool for Cardiac Diseases",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python, TensorFlow, Scikit-learn, SQLite, MySQL",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 12.61,
+            "sim_description": null,
+            "sim_tech_stack": 32.17,
+            "sim_objective": 33.82,
+            "doc_snippet": "Building a machine learning model that can predict a person\u2019s risk of heart disease using various health metrics such as age, weight, health history, cholesterol levels, and more. A collection of high-quality and accurate data is necessary, along wit"
+        },
+        {
+            "id": null,
+            "title": "Fingerprint Reader:",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python, OpenCV for image processing, scikit-learn for machine learning, TensorFlow or PyTorch for deep learning",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 14.7,
+            "sim_description": null,
+            "sim_tech_stack": 29.24,
+            "sim_objective": 1.27,
+            "doc_snippet": "Biometric systems have been gaining tremendous attention in these years with the combination of hardware and software challenges of fingerprint reader projects. Students can access affordable fingerprint sensor modules like R307, use a combination of"
+        }
+    ],
+    "ai_analysis": "**Project Similarity Analysis Report**\n\n### Student Project Synopsis\n\n* Title: Real-Time Air Quality Monitoring System\n* Description: An IoT-based platform that tracks AQI parameters using gas sensors and publishes data to the cloud.\n* Tech Stack: ESP8266, MQ-series Sensors, ThingSpeak, Python\n* Domain: IoT / Environment\n* Objective: Provide live air quality insights to improve health awareness.\n\n### Top-5 Most Similar Projects\n\n#### 1. Smart Farming and Agriculture\n\n**Why It Was Flagged as Similar**\n\n\u2022 **Domain-level commonality**: Both projects focus on environmental monitoring (air quality vs. soil/ climate).\n\u2022 **Predictive analytics**: Both projects aim to analyze data for insights, although with different objectives.\n\u2022 **IoT devices**: Both projects involve the use of IoT devices for data collection.\n\n**Exact Matching Components**\n\n\u2022 Title keyword overlaps: \"Monitoring System\" and \"Farming\"\n\u2022 Matching description phrases: \"track parameters\" and \"analyze data\"\n\u2022 Shared technical stack components: ESP8266, Python\n\u2022 Similar objectives or problem statements: Improve environmental awareness\n\u2022 Domain-level commonality: Environmental monitoring\n\u2022 Contextual similarity patterns: Both projects aim to provide real-time insights\n\n**Uniqueness Enhancement Suggestions**\n\n\u2022 Rewrite the objective to focus on air quality monitoring specifically.\n\u2022 Consider adding a new angle by incorporating machine learning algorithms for AQI prediction.\n\n#### 2. Fitness Tracker App with Step Counter\n\n**Why It Was Flagged as Similar**\n\n\u2022 **Domain-level commonality**: Both projects involve data collection and analysis (air quality vs. physical activity).\n\u2022 **Data-driven insights**: Both projects aim to provide users with valuable information.\n\u2022 **Mobile application**: Both projects involve developing a mobile app.\n\n**Exact Matching Components**\n\n\u2022 Title keyword overlaps: \"Tracker App\" and \"Fitness Tracker\"\n\u2022 Matching description phrases: \"track data\" and \"provide insights\"\n\u2022 Shared technical stack components: Mobile app development\n\u2022 Similar objectives or problem statements: Improve user experience\n\u2022 Domain-level commonality: Data-driven applications\n\u2022 Contextual similarity patterns: Both projects aim to engage users\n\n**Uniqueness Enhancement Suggestions**\n\n\u2022 Rewrite the objective to focus on air quality monitoring specifically.\n\u2022 Consider adding a new angle by incorporating gamification elements.\n\n#### 3. Rainfall Prediction system\n\n**Why It Was Flagged as Similar**\n\n\u2022 **Predictive analytics**: Both projects involve analyzing data for predictions (air quality vs. rainfall).\n\u2022 **Meteorological data**: Both projects rely on meteorological data for analysis.\n\u2022 **Machine learning algorithms**: Both projects may employ machine learning algorithms.\n\n**Exact Matching Components**\n\n\u2022 Title keyword overlaps: \"Prediction system\"\n\u2022 Matching description phrases: \"analyze data\" and \"predict patterns\"\n\u2022 Shared technical stack components: Machine learning algorithms\n\u2022 Similar objectives or problem statements: Improve forecasting accuracy\n\u2022 Domain-level commonality: Meteorological data analysis\n\u2022 Contextual similarity patterns: Both projects aim to provide predictions\n\n**Uniqueness Enhancement Suggestions**\n\n\u2022 Rewrite the objective to focus on air quality monitoring specifically.\n\u2022 Consider adding a new angle by incorporating real-time data processing.\n\n#### 4. Heart disease detection\n\n**Why It Was Flagged as Similar**\n\n\u2022 **Medical application**: Both projects involve medical applications (air quality vs. heart health).\n\u2022 **Machine learning algorithms**: Both projects may employ machine learning algorithms.\n\u2022 **Data-driven insights**: Both projects aim to provide users with valuable information.\n\n**Exact Matching Components**\n\n\u2022 Title keyword overlaps: \"Detection\" and \"Heart disease\"\n\u2022 Matching description phrases: \"analyze data\" and \"predict presence\"\n\u2022 Shared technical stack components: Machine learning algorithms\n\u2022 Similar objectives or problem statements: Improve diagnosis accuracy\n\u2022 Domain-level commonality: Medical applications\n\u2022 Contextual similarity patterns: Both projects aim to provide insights\n\n**Uniqueness Enhancement Suggestions**\n\n\u2022 Rewrite the objective to focus on air quality monitoring specifically.\n\u2022 Consider adding a new angle by incorporating wearable technology.\n\n#### 5. A mobile or web application to track a user's carbon footprint\n\n**Why It Was Flagged as Similar**\n\n\u2022 **Environmental monitoring**: Both projects involve environmental monitoring (air quality vs. carbon footprint).\n\u2022 **Data-driven insights**: Both projects aim to provide users with valuable information.\n\u2022 **User engagement**: Both projects aim to engage users.\n\n**Exact Matching Components**\n\n\u2022 Title keyword overlaps: \"Carbon footprint\" and \"Tracking\"\n\u2022 Matching description phrases: \"analyze data\" and \"provide insights\"\n\u2022 Shared technical stack components: Mobile/web application development\n\u2022 Similar objectives or problem statements: Improve environmental awareness\n\u2022 Domain-level commonality: Environmental monitoring\n\u2022 Contextual similarity patterns: Both projects aim to engage users\n\n**Uniqueness Enhancement Suggestions**\n\n\u2022 Rewrite the objective to focus on air quality monitoring specifically.\n\u2022 Consider adding a new angle by incorporating social sharing features.\n\n### General Originality Guidelines\n\n#### 1. Avoid Common Similarity Traps\n\n* Be cautious of projects that focus on data analysis or machine learning algorithms without a clear domain-specific objective.\n* Ensure that your project has a unique and focused objective.\n\n#### 2. Differentiate Your Project\n\n* Use distinct keywords in your title, description, and objective to differentiate your project from similar ones.\n* Avoid using generic phrases or descriptions that could be applied to multiple projects.\n\n#### 3. Best Practices for Making Academically Original Work\n\n* Conduct thorough research on the topic to identify unique aspects and potential areas for improvement.\n* Engage with experts in the field to gain a deeper understanding of the subject matter.\n* Use original language and avoid plagiarism by paraphrasing or rephrasing existing work.\n\n#### 4. Technical + Conceptual Strategies to Reduce Similarity\n\n* Consider using alternative technologies or approaches that are not as commonly used in similar projects.\n* Focus on developing a unique algorithm or model that addresses a specific problem or objective.\n* Use domain-specific knowledge and expertise to differentiate your project from more general applications.\n\n#### 5. Encourage Critical Thinking and Creativity\n\n* Encourage students to think critically about the topic and identify areas for improvement or innovation.\n* Provide opportunities for students to explore different angles, datasets, modules, or problem framing that could lead to a more original project.\n* Foster an environment of creativity and experimentation to help students develop their unique ideas."
+}

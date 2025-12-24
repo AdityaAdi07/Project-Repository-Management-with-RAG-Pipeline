@@ -1,0 +1,576 @@
+[
+  {
+    "project_id": "auto001",
+    "title": "Health and Fitness Tracking with Gamification",
+    "description": "It has become increasingly difficult to stay healthy and fit nowadays. One can create a mobile gaming application in such a way that it can track the fitness level and encourage users to achieve the desired level of fitness by incorporating gamified elements. One example can be taken from the famous Pokémon Go game, which used real-time location to enhance the player's engagement and make the participants go from one place to another, although its aim wasn’t to train them for marathons. Through this project, one can get a better grip on mobile UI/UX design, backend development, and basic graphic design.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2023",
+    "tech_stack": "React Native, SwiftUI, Node.js, Django, MongoDB, PostgreSQL, Adobe XD, Figma",
+    "objective": "Develop a mobile app that tracks fitness levels and encourages users to achieve desired fitness goals through gamified elements.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto002",
+    "title": "Human-Robot Interaction Interface",
+    "description": "As the use of robots is continuously increasing in every sector, students can find better ways for humans to interact with robots, like developing gesture control, enhancing voice commands, or using touchscreens. The project can include the use of programming languages like Python, an understanding of the Robot Operating System (ROS), and natural language processing.",
+    "domain": "General Computing",
+    "year": "2020",
+    "tech_stack": "Python, ROS, NLTK",
+    "objective": [
+      "Develop an interface for human-robot interaction that enables users to control robots using gestures, voice commands, or touchscreens.",
+      "Implement a system that leverages machine learning and natural language processing to understand user inputs.",
+      "Create a robust and efficient framework for integrating various sensors and actuators with the robot's control system."
+    ],
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto003",
+    "title": "Fake News Detection System",
+    "description": "During times of crises, a lot of fake and distorted information is spread over various social media platforms in the form of videos and pictures. Some of it holds sentimental value and can trigger social unrest. So, it becomes important to identify them as soon as possible. While developing a fake news detection system, students can explore AI, natural language processing, and machine learning to identify potentially fake news articles based on their source. Skills required for this project include programming, data acquisition, and deep learning.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2020",
+    "tech_stack": "Python, TensorFlow, PyTorch, NLTK, spaCy, Keras, Pandas, NumPy",
+    "objective": "Identify and classify fake news articles based on their source using machine learning and natural language processing techniques.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto004",
+    "title": "E-commerce platform",
+    "description": "With the rise of the digital marketplace, there is competition among businesses to offer an easy-to-use platform and user interface. Businesses today prioritize user experience, customer security, engagement, performance, etc. Building an e-commerce platform therefore demands proficiency in the complex interplay of the user-user interface and the development of secure product information storage, data encryption for secure payment, customer data, order details, etc. \n\nYou can work on a project that focuses on the authentication system and providing security to the e-platform. which is in great demand in the industry.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2021",
+    "tech_stack": "Python, Django, Django AllAuth, PyJWT, PostgreSQL",
+    "objective": "Design and implement a robust authentication system for the e-commerce platform to ensure secure user data, secure payment processing and order management.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto005",
+    "title": "Smart Traffic Light System",
+    "description": "We all have somehow faced the long waiting time at major traffic junctions. Some of them are due to inadequate use of the traffic light system. One can design a small-scale hardware prototype of a traffic light system that can adapt to real-time traffic flow on roads, using sensors and intelligent algorithms can determine the time needed for vehicles to cross or wait, depending on the direction of rush. The projects need the development of simulation logic, programming, and basic electronics and hardware interfacing.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2021",
+    "tech_stack": "Python, TensorFlow, Keras, OpenCV, numpy, pandas, Raspberry Pi, Arduino, Linux",
+    "objective": "Design and implement a real-time traffic light system that adapts to traffic flow using sensors, intelligent algorithms, and simulation logic.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto006",
+    "title": "Library Management System",
+    "description": "This is another excellent project idea where you can work on offering hassle-free and automated handling and management of the library.  Typically, a library management system involves book database maintenance, keeping records of issued books, book cataloging, etc.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2024",
+    "tech_stack": "Python as the primary language, using Django for web development and Flask for API development; along with MySQL or PostgreSQL for database management; and libraries such as pandas, numpy, and scikit-learn for data analysis and machine learning tasks.",
+    "objective": "Create an efficient and user-friendly library management system that automates book cataloging, record keeping, and issuance management, ensuring seamless access to library resources.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto007",
+    "title": "Building AI Chatbots",
+    "description": "This is a booming area in technology. Working on a project in this area can help you explore the mechanisms that go into the development of robots emulating human conversational styles and providing accurate answers and solutions to users. You can explore the use of AI technologies, machine learning, and programming languages like Python and develop new formats of AI-powered chatbots for an advanced user experience.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2021",
+    "tech_stack": "Python, TensorFlow, Keras, NLTK, spaCy",
+    "objective": [
+      "Develop an AI chatbot with a conversational interface using Python and machine learning algorithms.",
+      "Improve the chatbot's accuracy by integrating natural language processing (NLP) libraries.",
+      "Enhance user experience through interactive voice or text-based conversations."
+    ],
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto008",
+    "title": "Image Recognition",
+    "description": "Working on image recognition projects will lead you into the nuances of deep learning, and machine learning. computer vision and, most significantly, the use of CNN (convolutional neural networks). You may get to enhance your skills in handling variations in image quality, object occlusion lighting conditions, etc.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2024",
+    "tech_stack": "TensorFlow, OpenCV, NumPy, Python",
+    "objective": "Build an image recognition system that can accurately identify objects in images, considering variations in lighting conditions and object occlusion.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto009",
+    "title": "Sign Language Recognition System",
+    "description": "The fundamental aim of this project is to reduce the communication gap between a sign language user and a non-user to enhance inclusivity and services.  The systeam needs cameras or motion detection sensors for the data acquisition in real time and a programe to deduce the meaning. The output can be textual or spoken. CS skills can include machine learning, programming, and image and video processing.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2020",
+    "tech_stack": "Python, TensorFlow, OpenCV",
+    "objective": "Develop a real-time sign language recognition system to decode and interpret sign language gestures into textual or spoken output.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto010",
+    "title": "Recommendation System",
+    "description": "Businesses and the entertainment industry today abound with competition to garner a maximum number of customers and users. The recommendation system is one effective method employed by these industries at scale to improve customer satisfaction, increase sales, and drive engagement. You can delve into the techniques of content-based filtering, data analysis, user behavior modeling, data processing, feature engineering, and model evaluation, among others.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2023",
+    "tech_stack": "Python 3.x, Django framework, NumPy, pandas, scikit-learn, TensorFlow, Keras, PostgreSQL database",
+    "objective": "Develop a scalable and accurate recommendation system that increases customer satisfaction and sales for businesses in the entertainment industry.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto011",
+    "title": "Sentiment Analysis Software",
+    "description": "This is another significant player in the business world today, Building a sentiment analysis system would require you to be proficient a text processing, feature extraction, and sentiment classification by using techniques like ML, NLP, and deep learning.  A customer sentiment analysis majorly helps in identifying trends, monitoring brand reputation, and helping businesses make data-driven informed decisions.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2020",
+    "tech_stack": "Python, TensorFlow, PyTorch, NLTK, spaCy, scikit-learn, Python",
+    "objective": [
+      "Develop a robust sentiment analysis system using ML, NLP, and deep learning techniques.",
+      "Utilize Python frameworks and libraries to process text data, extract features, and classify sentiments.",
+      "Integrate the model with a scalable backend for real-time customer sentiment analysis."
+    ],
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto012",
+    "title": "Cybersecurity Framework",
+    "description": "This is again another excellent opportunity to showcase your skills and make impactful contributions to the digital world. A robust cybersecurity framework is a necessity for every organization today. Your project may include developing a framework including risk assessments, threat modeling, and implementing robust security measures.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2020",
+    "tech_stack": "Python, JavaScript, Express.js, Django, Flask-SQLAlchemy, Nginx",
+    "objective": [
+      "Develop a comprehensive cybersecurity framework",
+      "Implement robust security measures for risk assessments and threat modeling",
+      "Enhance the organization's digital resilience"
+    ],
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto013",
+    "title": "Augmented reality application",
+    "description": "This will prove to be an exciting project for those enticed by the prospect of immersive experiences and who are interested in enhancing gaming, educational, and marketing experiences. You can explore 3D modeling, computer vision, and real-time rendering, etc.",
+    "domain": "General Computing",
+    "year": "2021",
+    "tech_stack": "C++, JavaScript, Unity, React Native, OpenCV, Three.js, PhysX",
+    "objective": [
+      "Develop an immersive augmented reality application",
+      "Integrate 3D modeling, computer vision, and real-time rendering for enhanced gaming, educational, and marketing experiences",
+      "Create a user-friendly interface to interact with the AR environment"
+    ],
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto014",
+    "title": "Virtual Private Network",
+    "description": "A VPN is one of the most popular project ideas for computer science students. It is a great way to learn about network security, protocols, and system administration. VPN offers a secure and private network connection to its users. These help in accessing blocked websites by overriding internet censorship. You can design a user-friendly and functional VPN easily with a little research on programming languages such as Python, Java, and C++, Cryptography, and operating systems.",
+    "domain": "Web / Software Engineering",
+    "year": "2021",
+    "tech_stack": "Python, Java, C++, OpenVPN, PyOpenSSL, Java NIO, cryptography, OpenSSL, Java Cryptography Architecture",
+    "objective": [
+      "Design a user-friendly and secure VPN connection",
+      "Implement encryption protocols for data protection",
+      "Develop a reliable system administration interface"
+    ],
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto015",
+    "title": "Intrusion Detection System (IDS)",
+    "description": "An IDS is a sophisticated security technology that is designed to monitor network traffic and system activities for any suspicious activities, including malicious usage or policy violations. This project can be small or big, depending on the complexity. IDS detects potential security breaches, such as unauthorized access and attacks on computer systems. The project requires knowledge of network programming, user interface development, data analysis, etc.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2021",
+    "tech_stack": "Python, C++, Scapy, OpenCV, NumPy, Pandas, scikit-learn",
+    "objective": [
+      "Design and implement an Intrusion Detection System (IDS) to monitor network traffic and system activities.",
+      "Develop a user-friendly interface for real-time anomaly detection and alerts.",
+      "Train machine learning models using Scikit-learn to predict potential security breaches."
+    ],
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto016",
+    "title": "Medical Image Analysis",
+    "description": "Explore the techniques of image segmentation. object detection and classification in developing medical image analysis and bringing impactful improvement in healthcare outcomes, disease detection, diagnosis and prognosis, treatment plans and facilities, etc.",
+    "domain": "Mobile / HealthTech",
+    "year": "2022",
+    "tech_stack": "Python, Java, OpenCV, TensorFlow, PyTorch, Numpy, Pandas, scikit-image",
+    "objective": [
+      "Develop a medical image analysis system that improves healthcare outcomes through advanced object detection, segmentation, and classification techniques.",
+      "Improve disease detection, diagnosis, prognosis, treatment plans, and facilities using machine learning algorithms.",
+      "Create an impactful tool for the medical field by enhancing data processing, visualization, and analysis capabilities."
+    ],
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto017",
+    "title": "Online Learning Platform",
+    "description": "Work on presenting an effective platform for the educational sector as virtual learning platforms have become a standard and democratized education. Your project may prioritize engaging content, personalized learning experiences, and providing user-friendly interfaces.",
+    "domain": "General Computing",
+    "year": "2023",
+    "tech_stack": "Python, JavaScript, React, Django, Node.js, Flask, MongoDB, PostgreSQL",
+    "objective": [
+      "Design an engaging online learning platform with personalized experiences.",
+      "Provide a user-friendly interface for students and instructors.",
+      "Foster effective communication and community building."
+    ],
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto018",
+    "title": "SMS Spam Filtering",
+    "description": "Explore the application of TensorFlow and Deep learning algorithms for designing SMS spam detection software. Engage in the uses of LSTMs (deep neural networks) and Recurrent neural networks for predicting spam messages. These technologies are capable of detecting spam with 99 percent accuracy.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2024",
+    "tech_stack": "TensorFlow, Keras, NumPy, Pandas, Scikit-learn, Python",
+    "objective": [
+      "Design an SMS spam filtering system using LSTMs and Recurrent Neural Networks for 99% accuracy",
+      "Develop a deep learning-based solution to classify SMS messages as spam or non-spam",
+      "Improve the classification model to achieve optimal performance"
+    ],
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto019",
+    "title": "Vulnerability Scanner",
+    "description": "Creating a simple tool to scan and detect a network or application for common security vulnerabilities. It is a valuable project that investigates network security, web application security, and system auditing. It identifies potential weaknesses that could be exploited for malpractices. The general requirements for the project are an understanding of CP/IP and HTTP protocols, knowledge of attack vectors, web development basics, data parsing, GUI, and HTML.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2021",
+    "tech_stack": "Python, JavaScript, Flask, React, Scapy, Requests, Tkinter, Bootstrap",
+    "objective": "Develop a Vulnerability Scanner that detects common security vulnerabilities using Python, Flask, Scapy, and Tkinter to create a user-friendly GUI application.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto020",
+    "title": "Weather Forecasting Application",
+    "description": "For those proficient at data aggregation from multiple APIs, features of geospatial integration, data structures, ML technologies, and algorithms may work in designing weather forecasting apps. You should be able to analyze available data of a sample area and systematize them with external data sources to derive weather conditions like wind, rain, sunrise, sunset, etc.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2022",
+    "tech_stack": "Python, Flask, Django, TensorFlow, PyTorch, PostgreSQL, MySQL, OpenWeatherMap, Dark Sky",
+    "objective": [
+      "Analyze and aggregate weather data from multiple APIs",
+      "Integrate geospatial data to derive accurate weather forecasts",
+      "Implement machine learning algorithms for predictive weather forecasting"
+    ],
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto021",
+    "title": "Smart Farming and Agriculture",
+    "description": "Another excellent idea to work for enhancing the agricultural sector. You can work on developing gadgets or technology that will help farmers have insights about the soil and climate and plan their farming methods accordingly. IoT devices like detectors for soil's moisture, humidity, and temperature are becoming a trend in the agricultural sector.",
+    "domain": "IoT / Embedded Systems",
+    "year": "2022",
+    "tech_stack": "Python with Keras for deep learning and TensorFlow for machine learning, Flask or Django as web frameworks, Scikit-learn for data preprocessing and analysis, OpenCV for computer vision tasks, SQLite or PostgreSQL for database management",
+    "objective": "Develop an IoT-based smart farming system that utilizes sensor data to provide real-time insights on soil moisture, humidity, and temperature, enabling farmers to optimize crop yields and reduce waste.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto022",
+    "title": "A Prediction Tool for Cardiac Diseases",
+    "description": "Building a machine learning model that can predict a person’s risk of heart disease using various health metrics such as age, weight, health history, cholesterol levels, and more. A collection of high-quality and accurate data is necessary, along with validation of the model from the real patient outcomes for its effective development. The project requires programming skills in SQL or NoSQL, use of a database such as SQLite, MySQL, and libraries like Scikit-learn, TensorFlow, etc.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2024",
+    "tech_stack": "Python, TensorFlow, Scikit-learn, SQLite, MySQL",
+    "objective": "Build a machine learning model predicting heart disease risk using health metrics.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto023",
+    "title": "Election Analysis",
+    "description": "Working on the analysis of election data is another exciting project leading to an in-depth understanding of the political scenario of a country.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2020",
+    "tech_stack": "Python, Flask, Pandas, Scikit-learn",
+    "objective": "Analyze and visualize election data to gain insights into voter behavior and political trends",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto024",
+    "title": "Beautiful Soup for Web Scraping",
+    "description": "Explore the application of using this Python package for extracting data through the parsing of XML documents and HTML.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2021",
+    "tech_stack": "Python, BeautifulSoup, lxml, requests, HTML, XML",
+    "objective": "Extract data from web pages using Beautiful Soup for parsing XML and HTML documents.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto025",
+    "title": "Hotel Booking Site",
+    "description": "Your website development project may include room availability information, customer services, menus, table booking, and bill generation, among others.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2024",
+    "tech_stack": "Python, Flask (fallback)",
+    "objective": "Automatic generation failed; placeholder added.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto026",
+    "title": "Academic Performance Evaluator",
+    "description": "This project outcome can aid teachers in tracking students' performance, assessing their strengths and weaknesses, and offering personalized training and support.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2022",
+    "tech_stack": "Python, Flask, PostgreSQL, Scikit-learn",
+    "objective": [
+      "Develop an efficient and scalable system for evaluating academic performance.",
+      "Design a user-friendly interface to track student progress and identify areas of improvement.",
+      "Integrate data analytics capabilities to provide actionable insights for teachers."
+    ],
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto027",
+    "title": "Social Media App",
+    "description": "Explore technologies like React Native or Flutter, WebScokets or Firebase, etc. to deliver a social media app.",
+    "domain": "Mobile / HealthTech",
+    "year": "2020",
+    "tech_stack": "React Native, JavaScript, HTML/CSS, Firebase Realtime Database, Node.js, Firebase Firestore, Google Auth, Facebook Auth, axios, react-native-firebase",
+    "objective": "Build a social media app with real-time commenting, posting, and friend requests using React Native, Firebase Realtime Database, Node.js, and Google Auth.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto028",
+    "title": "Food Delivery App",
+    "description": "Employ your front-end and back-end development prowess, integrate mapping services and payment gateways, and deliver an app that offers efficient food delivery service.",
+    "domain": "Mobile / HealthTech",
+    "year": "2023",
+    "tech_stack": "React, Redux, Node.js, Express.js, MongoDB, Google Maps, Stripe",
+    "objective": "Develop a food delivery app with efficient mapping and payment integrations for seamless user experience.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto029",
+    "title": "Predictive Analysis Tool",
+    "description": "You can work on developing a tool applicable across industries for studying historical data and predicting future outcomes.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2023",
+    "tech_stack": "Python, Flask (fallback)",
+    "objective": "Automatic generation failed; placeholder added.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto030",
+    "title": "Gold Price Prediction System",
+    "description": "In this project, students will build a model that can forecast gold prices in the country based on historical data, current economic trends, and global scenarios. This involves data scraping, modelling, and picturing future price trends. Students can explore algorithms like ARIMA and LSTM neural networks that are useful in modeling time-based data.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2023",
+    "tech_stack": "Python, Flask, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Statsmodels, TensorFlow, Python",
+    "objective": "Build a model to predict gold prices based on historical data, current economic trends, and global scenarios using ARIMA and LSTM neural networks.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto031",
+    "title": "The applications of ML in disease and pest detection in agriculture",
+    "description": "ML has the potential to revolutionize farming in many ways. ML can help in the detection of pests and diseases in crops at an early stage by analysing pictures of leaves, stems, yield, and other crop details. Pictures can be taken by phones, drones, or specialised imaging sensors. Prerequisite knowledge includes an understanding of a deep learning framework, basic image processing techniques, programming, and ML fundamentals.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2022",
+    "tech_stack": "TensorFlow, PyTorch, OpenCV, scikit-image, Python, Kotlin",
+    "objective": "Develop an early detection system for pests and diseases in crops using deep learning and computer vision techniques.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto032",
+    "title": "To analyse the implications of deploying autonomous drones",
+    "description": "This can be an interdisciplinary project combining computer science with law, ethics, philosophy, and political science. Students can make a simulation model based on the deployment of drones in civil and military areas. Programming tools like Python with libraries like SimPy or basic agent-based modeling frameworks could be used. Analyse the potential risk involved and the mitigation strategies. Understand the relevant technology involved and get aware of the ethical and legal frameworks surrounding the use of AI in autonomous drones.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2022",
+    "tech_stack": "Python, SimPy, Scipy, NumPy, agent-based modeling frameworks, data analysis libraries",
+    "objective": "Develop a simulation model to analyze the implications of deploying autonomous drones in civil and military areas, identifying potential risks and mitigation strategies.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto033",
+    "title": "Develop a VR application for a specific type of therapy",
+    "description": "This project can combine software development with human psychology. It can be used for exposure therapy, distraction from pain, practice relaxation, training in social skills, and cognitive behavioural therapy. For the development of such VR applications, students must use a programming language like C++ or C#. They must have familiarity with 3D Modeling and Design, UI and UX, and human-computer interaction principles.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2021",
+    "tech_stack": "C#, C++, Unity,  Unreal Engine, Blender,  Maya, Unreal Editor, Unity Editor",
+    "objective": "Develop a VR application using C# and Unity for exposure therapy, relaxation, or social skills training.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto034",
+    "title": "A mobile or web application to track a user's carbon footprint",
+    "description": "This project combines the knowledge of interface design, data management, and understanding of environmental science. The user input includes transportation data, energy consumption at home, diet, purchases made, etc. Based on these, carbon footprints can be calculated with the help of various algorithms. The app can then offer various personalised suggestions to reduce carbon emissions. It requires hands-on experience with mobile application development in Android and iOS, and web development in HTML, CSS, or JavaScript.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2020",
+    "tech_stack": "Python, Flask (fallback)",
+    "objective": "Automatic generation failed; placeholder added.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto035",
+    "title": "Analysing the vulnerability of cryptographic algorithms to quantum attacks",
+    "description": "Investigate specific cryptographic algorithms such as RSA, ECC, AES, etc., and analyze their weaknesses in the face of quantum attacks with the help of quantum algorithms like Shor's Algorithm and Grover's Algorithm. Students can research the concept of \"harvest now, decrypt later\". With the help of this project, students can develop their understanding of cryptographic algorithms, quantum computing, and mathematics.",
+    "domain": "General Computing",
+    "year": "2022",
+    "tech_stack": "Python, C++, PyCryptodome for Python, OpenSSL and libcrypto++ for C++, IDK3 (a multi-purpose quantum computer simulator) for research simulation",
+    "objective": [
+      "Investigate the vulnerability of cryptographic algorithms to quantum attacks using Shor's Algorithm and Grover's Algorithm",
+      "Analyze specific algorithms like RSA, ECC, AES, etc.",
+      "Develop an understanding of cryptography, quantum computing, and mathematics"
+    ],
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto036",
+    "title": "A Phishing Detection System",
+    "description": "A PDS is designed to protect users from phishing attacks. It uses machine learning to detect phishing websites by analysing URLs and text content of emails and web pages. PDS can safeguard users from fraudulent websites that steal personal data like bank details, location, credit card details, and passwords. It can alert you about the extensions or block them as well. For this project, students need to know about machine learning, URL analysis, web scraping, etc. Python can be used as a programming language for ML libraries and SQL for website data.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2022",
+    "tech_stack": "Python, Scikit-Learn, TensorFlow, Flask, Django, SQLAlchemy",
+    "objective": [
+      "Build a Phishing Detection System using machine learning and web scraping",
+      "Develop a system that can detect phishing websites and alert users",
+      "Protect users from fraudulent websites and safeguard personal data"
+    ],
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto037",
+    "title": "Predicting Customer Churn",
+    "description": "Customer churn is a predictive model that involves identifying which customers are more likely to leave a business based on their past behaviour. It can be done by analysing customers' purchase history, support interactions, reviews posted, and subscription history through ML models. It helps companies to modify their services and retain customers. The various technologies that can be used are Python, Scikit-learn for classification models, and Pandas for data manipulation.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2023",
+    "tech_stack": "Python, Scikit-learn, Pandas",
+    "objective": "Build a predictive model to identify customer churn based on historical data.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto038",
+    "title": "Self-driving systems simulations",
+    "description": "This project will be a challenging endeavor that encourages you to explore autonomous vehicle technology. It includes the use of various sensors like cameras and lidars. Simulation must involve decision making, like obstacle avoidance and path planning. The controls of the vehicle can be predefined to enable the vehicle to drive through various environments depending on urban or rular models. Modeling of a specific route can be done using tools like CARLA or a custom Python-based simulator.",
+    "domain": "IoT / Embedded Systems",
+    "year": "2020",
+    "tech_stack": "Python 3.9 with PyTorch and OpenCV for deep learning and computer vision tasks, CARLA for simulation environment, NumPy and Pandas for data manipulation, and scikit-learn for machine learning.",
+    "objective": "Develop a self-driving system simulator that uses real-time sensor data to make decisions on obstacle avoidance and path planning in various environments.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto039",
+    "title": "Handwritten Digit Recognition System",
+    "description": "Students can use image processing and machine learning to develop a system to recognize handwritten digits and deduce the relevant information. The most common database that can be used for this project is the Modified National Institute of Standards and Technology database (MNIST). Other technologies include Python, machine learning frameworks such as PyTorch and TensorFlow, and libraries for data visualisation.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2024",
+    "tech_stack": "PyTorch, TensorFlow, OpenCV, Pillow, Python",
+    "objective": "Develop a handwritten digit recognition system using machine learning and image processing techniques to accurately identify handwritten digits.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto040",
+    "title": "Fraud Detection System for Credit Card:",
+    "description": "Credit card fraud is an increasing threat in the cyber world, and any project that will develop fraud detection systems is very relevant. Students working on a machine-learning-based system can handle real-time recognition of suspicious transactions. The datasets include the Kaggle Credit Card Fraud Detection dataset which can perform model training on algorithms such as regression and random forests or neural networks that classify a transaction as either genuine or fraudulent. Important features can be the transaction amount, its location and time, and the user's behavioral aspects. Advanced students may employ anomaly detection algorithms and/or deep learning frameworks like TensorFlow to further boost accuracy. The project contributes to the honing of skills in data preprocessing and modelling while exposing students to concepts in cybersecurity.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2021",
+    "tech_stack": "Python with TensorFlow for deep learning and scikit-learn for regression and classification, pandas and NumPy for data manipulation, and Matplotlib/Seaborn for visualization.",
+    "objective": "Develop a machine-learning-based credit card fraud detection system that accurately classifies transactions as genuine or fraudulent.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto041",
+    "title": "Customer Segmentation Using Clustering:",
+    "description": "The best way businesses can understand and act upon their customers is by clustering, which is a strong tool in unsupervised learning. Therefore, the students can build customer segmentation, wherein they'll implement algorithms like K-means, DBSCAN, or hierarchical clustering. Customers can be clustered using a dataset from retail sales, e-commerce, etc., based on purchasing behaviour, demographics, or browsing habits. The activity of further visualizing those clusters through tools like Matplotlib or Seaborn could lead to an increased level of understanding. The project will teach data analysis, algorithm selection, and visualization, proving useful for entering professional fields like data science and marketing analytics.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2023",
+    "tech_stack": "Python, Scikit-Learn for clustering algorithms, Matplotlib/Seaborn for visualization, NumPy, Pandas",
+    "objective": "Build a customer segmentation model using unsupervised learning techniques and visualize the clusters to gain insights into customer behavior.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto042",
+    "title": "Blog Management Systems With User Application:",
+    "description": "Developing a blog management application would make for a great full-stack project concerning students with web development interests. Such an application may comprise a user-friendly front end (React or Angular) and back-end technologies that manage user authentication, post creation, and comments (Node.js, Django, or Flask). A database (e.g., MySQL or MongoDB) is necessary for storing blog content and user data. Bonuses could consist of rich text editing, tagging, or a recommendation engine for related posts. This project enhances skills in software architecture, API design, and database management, giving the students something tangible.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2024",
+    "tech_stack": "React, Node.js, MySQL",
+    "objective": "Develop a blog management application for user authentication, post creation, and comment management.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto043",
+    "title": "Fitness Tracker App with Step Counter:",
+    "description": "Mobile app development is grabbing eyeballs, and a fitness tracker app is an ideal door into the scenario. Students can use any of the famous platforms, such as Flutter or Android Studio, to develop an application that tracks steps, calories burnt, and distance travelled using smartphone sensors like the accelerometer. Feature additions can include goal setting, progress charts, and notifications to keep users engaged. As a challenge, the students can look at cloud syncing with Firebase or introducing a social function to compete with friends. This project encompasses UI/UX design, sensor programming, and data storage—an ideal environment for aspiring app developers.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2023",
+    "tech_stack": "Flutter, Firebase Cloud Firestore, Android Studio",
+    "objective": "Design and develop a mobile app that tracks user fitness metrics and provides features such as goal setting, progress charts, and notifications.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto044",
+    "title": "Handwritten Digit Recognition Using Neural Network:",
+    "description": "A classic, yet always fresh project, handwritten digit recognition opens up neural net computer vision for students. With the MNIST database, one can train a convolutionary neural network (CNN) using a TensorFlow or PyTorch framework--to interpret digits 0 to",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2023",
+    "tech_stack": "TensorFlow, PyTorch, Keras, OpenCV",
+    "objective": [
+      "Recognize handwritten digits from 0 to 9 using a Convolutional Neural Network (CNN)",
+      "Utilize the MNIST database for training and testing",
+      "Apply TensorFlow or PyTorch for efficient implementation"
+    ],
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto045",
+    "title": "Start small with a simple multi-layer perceptron, and then progress to proper CNNs for better accuracy. Play with hyperparameters or different types of data for performance improvement. Great for deep learning and/or imaging, this is an entry-level foray into the realm beyond optical character recognition (OCR).",
+    "description": "",
+    "domain": "General Computing",
+    "year": "2020",
+    "tech_stack": "TensorFlow, NumPy, Pandas, Matplotlib, Python",
+    "objective": "Train a multi-layer perceptron (MLP) to classify images and improve accuracy with various hyperparameter tuning strategies.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto046",
+    "title": "Fingerprint Reader:",
+    "description": "Biometric systems have been gaining tremendous attention in these years with the combination of hardware and software challenges of fingerprint reader projects. Students can access affordable fingerprint sensor modules like R307, use a combination of Arduino or Raspberry Pi devices and they can capture and store fingerprint data. Develop an algorithm, perhaps in Python, to compare the fingerprints against a database. Some applications include secure door locks or attendance systems. This project teaches embedded systems-related principles, signal processing, and security. This should be interesting for students who aspire toward IoT or biometrics.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2020",
+    "tech_stack": "Python, OpenCV for image processing, scikit-learn for machine learning, TensorFlow or PyTorch for deep learning",
+    "objective": "Develop a fingerprint comparison algorithm using Python to secure door locks or attendance systems.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto047",
+    "title": "House Price Prediction:",
+    "description": "The real estate domain is a goldmine for data-driven insights, and house price prediction is something that can serve as a good practical machine learning project. Building regression models (such as linear regression, XGBoost, or neural networks) on datasets such as the Boston Housing data set or Kaggle's House Prices data set to come up with price predictions by considering various features such as location, size, and amenities would give deep insight into the domain. Certain variable engineering must also be attempted: for example, defining new variables from the existing data and model performance can be assessed using metrics such as RMSE. This project helps hone the skills of predictive modelling and data wrangling with some real-world applications in finance and urban planning.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2021",
+    "tech_stack": "Python, TensorFlow, Pandas, NumPy, Scikit-learn, Keras, Python",
+    "objective": "Build a predictive model using machine learning techniques to forecast house prices based on various features.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto048",
+    "title": "Language Learning App with Gamification:",
+    "description": "Learning new languages can be enjoyable, and gamification adds to the fun. Students can get together to develop an app (mobile or web) teaching vocabulary, grammar, or pronunciation, using some fun games—quizzes, flashcards, or speech recognition challenges. Frameworks such as React Native for mobile apps or Unity for the web can be used and APIs such as Google Translate or speech-to-text can be integrated for functionality. Leaderboards, rewards, or daily streaks can engage users even further. The project covers app development, API integration, and user psychology; hence it is a mechanism combining entertainment and learning.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2024",
+    "tech_stack": "React Native, Unity, Google Translate API, Speech-to-text APIs, JavaScript, C#, HTML/CSS",
+    "objective": "Develop a language learning app with gamification features using React Native and Unity, integrating APIs for functionality and engaging users through leaderboards and rewards.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto049",
+    "title": "Biometric Attendance System:",
+    "description": "Tracking attendance by hand seems outdated. Using fingerprint or facial recognition (OpenCV and Python), students can develop a system to record attendance automatically. Data may be stored in a database and then reported to teachers or employers. For a twist, deploy it on a Raspberry Pi with a camera or sensor. This project combines skills in hardware, software, and data management to be deployed in schools, offices, or even smart homes.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2021",
+    "tech_stack": "Python, Flask (fallback)",
+    "objective": "Automatic generation failed; placeholder added.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto050",
+    "title": "Chatbot Song Recommendation:",
+    "description": "Hot with the flock of music buffs, a music-bot that recommends songs based on user preferences. Using natural language processing (NLP) with libraries such as NLTK or spaCy, students can create a conversational agent that quizzes users on genres, moods, or favourite artists. Music APIs are integrated to fetch recommendations from e.g. Spotify or Last.fm, and the bot can be deployed on Discord or Telegram, etc. For a real challenge, implement machine learning so that recommendations can evolve and become personalized over time. This project combines NLP, API usage, and UI design, ensuring AI enthusiasts will love it.\n\nOther computer science project ideas that can be helpful for students are:",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2020",
+    "tech_stack": "Python, Flask, MongoDB, Scikit-learn, TensorFlow, NLTK, spaCy",
+    "objective": "Develop a music chatbot that recommends songs based on user preferences using NLP and machine learning.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto051",
+    "title": "Personal Portfolio Website",
+    "description": "A suitable project for beginners, where they can demonstrate their web development skills through designing a personal website. The website can include colorful graphics, pictures, videos, etc. Students can add sections like “About me”, “Skills”, “Projects”, and “Contact”. It gives them a chance to freely explore imagination and understanding of presenting oneself in the corporate world. Students can use languages like HTML, CSS, and JavaScript to develop the website, and optional libraries like Bootstrap for styling.\n\nPersonal Finance Management Application: Students can develop their mobile applications to track their expenses, budgets, and savings.\n\nSocial Media Trends Analysis Tool: To observe and analyse publicly available data from various social media platforms to identify ongoing trends and user behaviours.\n\nStock Market Prediction Tool: Students can develop an application to predict future stock trends by analysing stock history, government policies, and global scenarios.\n\nInformation Platform for Local Businesses: Developing a website or app for local businesses to share information, resource availability, and services for the betterment of society.\n\nGenerative Art using AI: Exploring the AI-generated art with the help of training models to create pictures, animation, or audio. \n\nThose are some of the top topics you may explore, which will help you showcase your prowess and have a lasting impact on your career.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2020",
+    "tech_stack": "HTML, CSS, JavaScript, Bootstrap",
+    "objective": [
+      "Design a personal portfolio website to demonstrate web development skills",
+      "Analyze and visualize social media trends",
+      "Predict future stock trends using historical data and global analysis"
+    ],
+    "source": "ISE-dept"
+  }
+]

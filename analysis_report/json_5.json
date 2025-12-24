@@ -1,0 +1,111 @@
+{
+    "query": "Fraud Detection in Online Transactions",
+    "timestamp": "2025-11-21 17:45:10.069486",
+    "results": [
+        {
+            "id": null,
+            "title": "Fraud Detection System for Credit Card:",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python with TensorFlow for deep learning and scikit-learn for regression and classification, pandas and NumPy for data manipulation, and Matplotlib/Seaborn for visualization.",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 70.79,
+            "sim_description": null,
+            "sim_tech_stack": 59.05,
+            "sim_objective": 71.98,
+            "doc_snippet": "Credit card fraud is an increasing threat in the cyber world, and any project that will develop fraud detection systems is very relevant. Students working on a machine-learning-based system can handle real-time recognition of suspicious transactions."
+        },
+        {
+            "id": null,
+            "title": "Online Payment Fraud Detection",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python 3.8+, Pandas, NumPy, matplotlib, Scikit-learn, Flask",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 86.1,
+            "sim_description": null,
+            "sim_tech_stack": 69.29,
+            "sim_objective": 65.87,
+            "doc_snippet": "This online payment fraud detection project aims to help students learn how to build a system that can identify fraudulent online transactions.  The model will work with a dataset of previous online transactions and train machine learning models to r"
+        },
+        {
+            "id": null,
+            "title": "Credit card clustering",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python, Flask, Pandas, NumPy, Matplotlib, Seaborn, Plotly, Scikit-learn, Scipy, SQL",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 36.76,
+            "sim_description": null,
+            "sim_tech_stack": 66.66,
+            "sim_objective": 33.99,
+            "doc_snippet": "This project aims to create a cluster of customers with similar credit card spending patterns, providing valuable insights for credit card companies. It will use Python libraries and unsupervised machine-learning techniques to analyze credit card tra"
+        },
+        {
+            "id": null,
+            "title": "A Phishing Detection System",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python, Scikit-Learn, TensorFlow, Flask, Django, SQLAlchemy",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 43.58,
+            "sim_description": null,
+            "sim_tech_stack": 63.0,
+            "sim_objective": 46.03,
+            "doc_snippet": "A PDS is designed to protect users from phishing attacks. It uses machine learning to detect phishing websites by analysing URLs and text content of emails and web pages. PDS can safeguard users from fraudulent websites that steal personal data like "
+        },
+        {
+            "id": null,
+            "title": "Predicting Customer Churn",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python, Scikit-learn, Pandas",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 30.47,
+            "sim_description": null,
+            "sim_tech_stack": 85.37,
+            "sim_objective": 27.64,
+            "doc_snippet": "Customer churn is a predictive model that involves identifying which customers are more likely to leave a business based on their past behaviour. It can be done by analysing customers' purchase history, support interactions, reviews posted, and subsc"
+        },
+        {
+            "id": null,
+            "title": "Heart disease detection",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python, Scikit-learn, TensorFlow, Pandas, NumPy, Matplotlib, Seaborn, Plotly",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 22.02,
+            "sim_description": null,
+            "sim_tech_stack": 68.13,
+            "sim_objective": 28.1,
+            "doc_snippet": "The heart disease detection project aims to build a tool that will help users detect the presence of heart disease. It uses Python and the supervised learning technique of classification to accurately predict the presence of a heart disease based on "
+        },
+        {
+            "id": null,
+            "title": "Customer Segmentation Using Clustering:",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python, Scikit-Learn for clustering algorithms, Matplotlib/Seaborn for visualization, NumPy, Pandas",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 29.39,
+            "sim_description": null,
+            "sim_tech_stack": 60.23,
+            "sim_objective": 31.27,
+            "doc_snippet": "The best way businesses can understand and act upon their customers is by clustering, which is a strong tool in unsupervised learning. Therefore, the students can build customer segmentation, wherein they'll implement algorithms like K-means, DBSCAN,"
+        },
+        {
+            "id": null,
+            "title": "Instagram Reach Analysis",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python, Pandas, NumPy, Matplotlib, Seaborn, Plotly, None",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 12.21,
+            "sim_description": null,
+            "sim_tech_stack": 56.3,
+            "sim_objective": 5.5,
+            "doc_snippet": "Instagram reach analysis is a vital topic for social media marketing. This project aims at teaching learners how to use data to analyze their Instagram reach. It involves collecting data on the reach of your past posts and using Python to understand "
+        }
+    ],
+    "ai_analysis": "**Project Similarity Analysis Report**\n\n### Student Project Synopsis\n\n* Title: Fraud Detection in Online Transactions\n* Description: A machine learning solution that analyzes transaction patterns to identify potential fraud in financial systems.\n* Tech Stack: Python, Scikit-learn, XGBoost, Pandas\n* Domain: Artificial Intelligence / FinTech\n* Objective: Detect fraudulent transactions using anomaly detection and ML classification.\n\n### Top-5 Most Similar Projects\n\n#### 1. Fraud Detection System for Credit Card\n\n**Why It Was Flagged as Similar**\n\n\u2022 The project aims to detect credit card fraud, which is a similar concept to online transaction fraud.\n\u2022 Both projects utilize machine learning techniques for anomaly detection.\n\u2022 The objective of detecting fraudulent transactions is common between the two projects.\n\n**Exact Matching Components**\n\n* Title keyword overlaps: \"Fraud Detection\" and \"Credit Card\"\n* Matching description phrases: \"machine-learning-based system\" and \"detecting fraudulent online transactions\"\n* Shared technical stack components: Python, Scikit-learn\n* Similar objectives or problem statements: Detecting fraudulent transactions using machine learning\n* Domain-level commonality: Financial systems\n* Contextual similarity patterns: Both projects aim to protect users from financial losses\n\n**Uniqueness Enhancement Suggestions**\n\n\u2022 Rewrite the objective to focus on a specific type of fraud, such as \"detecting credit card skimming attacks\".\n\u2022 Consider incorporating additional features, such as device fingerprinting or IP blocking, to enhance the project's uniqueness.\n\n#### 2. Online Payment Fraud Detection\n\n**Why It Was Flagged as Similar**\n\n\u2022 The project aims to detect online payment fraud, which is a similar concept to online transaction fraud.\n\u2022 Both projects utilize machine learning techniques for anomaly detection.\n\u2022 The objective of detecting fraudulent transactions is common between the two projects.\n\n**Exact Matching Components**\n\n* Title keyword overlaps: \"Online Payment Fraud Detection\"\n* Matching description phrases: \"machine-learning-based system\" and \"detecting fraudulent online transactions\"\n* Shared technical stack components: Python, Scikit-learn\n* Similar objectives or problem statements: Detecting fraudulent transactions using machine learning\n* Domain-level commonality: Financial systems\n* Contextual similarity patterns: Both projects aim to protect users from financial losses\n\n**Uniqueness Enhancement Suggestions**\n\n\u2022 Consider incorporating additional features, such as behavioral analysis or social network analysis, to enhance the project's uniqueness.\n\u2022 Rewrite the objective to focus on a specific type of online payment fraud, such as \"detecting credit card skimming attacks\".\n\n#### 3. Credit Card Clustering\n\n**Why It Was Flagged as Similar**\n\n\u2022 The project aims to cluster customers with similar credit card spending patterns, which is related to online transaction fraud detection.\n\u2022 Both projects utilize machine learning techniques for clustering or classification.\n\u2022 The objective of identifying customer behavior is common between the two projects.\n\n**Exact Matching Components**\n\n* Title keyword overlaps: None\n* Matching description phrases: \"unsupervised machine-learning techniques\" and \"customer behavior analysis\"\n* Shared technical stack components: Python, Scikit-learn\n* Similar objectives or problem statements: Identifying customer behavior using machine learning\n* Domain-level commonality: Financial systems\n* Contextual similarity patterns: Both projects aim to provide valuable insights for credit card companies\n\n**Uniqueness Enhancement Suggestions**\n\n\u2022 Consider incorporating additional features, such as demographic analysis or transaction history, to enhance the project's uniqueness.\n\u2022 Rewrite the objective to focus on a specific type of customer behavior, such as \"identifying high-value customers\".\n\n#### 4. A Phishing Detection System\n\n**Why It Was Flagged as Similar**\n\n\u2022 The project aims to detect phishing websites, which is related to online transaction fraud detection.\n\u2022 Both projects utilize machine learning techniques for classification or regression.\n\u2022 The objective of protecting users from fraudulent websites is common between the two projects.\n\n**Exact Matching Components**\n\n* Title keyword overlaps: None\n* Matching description phrases: \"machine learning\" and \"detecting phishing websites\"\n* Shared technical stack components: Python, Scikit-learn\n* Similar objectives or problem statements: Protecting users from fraudulent websites using machine learning\n* Domain-level commonality: Online security\n* Contextual similarity patterns: Both projects aim to safeguard users from financial losses\n\n**Uniqueness Enhancement Suggestions**\n\n\u2022 Consider incorporating additional features, such as URL analysis or email content analysis, to enhance the project's uniqueness.\n\u2022 Rewrite the objective to focus on a specific type of phishing attack, such as \"detecting phishing emails\".\n\n#### 5. Predicting Customer Churn\n\n**Why It Was Flagged as Similar**\n\n\u2022 The project aims to predict customer churn, which is related to online transaction fraud detection.\n\u2022 Both projects utilize machine learning techniques for classification or regression.\n\u2022 The objective of identifying customer behavior is common between the two projects.\n\n**Exact Matching Components**\n\n* Title keyword overlaps: None\n* Matching description phrases: \"predictive model\" and \"identifying customer behavior\"\n* Shared technical stack components: Python, Scikit-learn\n* Similar objectives or problem statements: Identifying customer behavior using machine learning\n* Domain-level commonality: Customer relationship management\n* Contextual similarity patterns: Both projects aim to provide valuable insights for businesses\n\n**Uniqueness Enhancement Suggestions**\n\n\u2022 Consider incorporating additional features, such as demographic analysis or transaction history, to enhance the project's uniqueness.\n\u2022 Rewrite the objective to focus on a specific type of customer behavior, such as \"identifying high-value customers\".\n\n### General Originality Guidelines\n\n#### 1. Avoid Common Similarity Traps\n\n* Be cautious when using popular machine learning algorithms or techniques.\n* Ensure that your project's objectives and problem statements are unique and distinct from existing projects.\n\n#### 2. Differentiate Your Project\n\n* Use specific keywords in your title, description, and objective to differentiate your project from others.\n* Focus on a specific type of fraud or customer behavior to make your project more original.\n\n#### 3. Best Practices for Making Academically Original Work\n\n* Conduct thorough literature reviews to ensure that your project builds upon existing research.\n* Use novel techniques or approaches to solve problems, rather than simply reusing existing solutions.\n* Consider collaborating with peers or mentors to gain new insights and perspectives.\n\n#### 4. Technical + Conceptual Strategies to Reduce Similarity\n\n* Use domain-specific knowledge or expertise to develop a unique solution.\n* Incorporate additional features or modules that are not commonly used in similar projects.\n* Focus on a specific type of problem or challenge to make your project more original.\n\n#### 5. Encourage Innovation and Creativity\n\n* Encourage students to think outside the box and come up with novel solutions to problems.\n* Provide opportunities for students to work on real-world projects or collaborate with industry partners.\n* Foster a culture of innovation and creativity in the academic environment."
+}

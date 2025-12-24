@@ -1,0 +1,252 @@
+[
+  {
+    "project_id": "auto001",
+    "title": "Predict Energy Consumption",
+    "description": "In the Predict Energy Consumption project, you will use regression and machine learning models to predict daily power consumption based on temporal factors like time of day and temperature. The goal is to uncover patterns that can optimize energy usage, improving efficiency and reducing costs. This is particularly important for utilities and businesses aiming to reduce operational expenses, promote energy conservation, and better manage their resources in a more sustainable way.\n\nThe Predict Energy Consumption project is a guided project, but you can replicate the objectives on a different dataset, such as Seoul's Bike Sharing Demand. Working on a completely new dataset will help you with code debugging and improve your problem-solving skills.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2020",
+    "tech_stack": "Python, PyTorch, Pandas, NumPy, Scikit-Learn, Matplotlib",
+    "objective": "Build a predictive model to forecast Seoul's bike sharing demand based on historical data, optimizing resource allocation and user experience.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto002",
+    "title": "Predict Insurance Charges",
+    "description": "In the From Data to Dollars - Predicting Insurance Charges project, you step into the role of a Data Scientist at a health insurance company. You will build a predictive model to estimate the insurance charges based on a client's attributes, such as age and health factors. This project offers a practical application of machine learning in business, enabling more accurate pricing models and helping companies manage risk while delivering personalized pricing strategies to clients. \n\nThe Predicting Insurance Charges is a guided project. You can replicate the result on a different dataset, such as the Hotel Booking Demand one. You can use it to predict whether a customer will cancel the booking or not.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2024",
+    "tech_stack": "Python 3.x with pandas, NumPy, Scikit-learn, and TensorFlow for data preparation, feature engineering, model training, and prediction.",
+    "objective": "Build a predictive model to estimate insurance charges based on client attributes using machine learning techniques, enabling more accurate pricing models and personalized strategies.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto003",
+    "title": "Predic Credit Card Approvals",
+    "description": "In the Predicting Credit Card Approvals project, you will build an automatic credit card approval application using hyperparameter optimization and Logistic Regression. \n\nYou will apply the skill of handling missing values, processing categorical features, feature scaling, dealing with unbalanced data, and performing automatic hyperparameter optimization using GridCV. This project will push you out of the comfort zone of handling simple and clean data. \n\nCredit Card Approvals\n\nImage by Author\n\nPredicting Credit Card Approvals is a guided project. You can replicate the result on a different dataset, such as the Loan Data from LendingClub.com. You can use it to build an automatic loan approval predictor.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2020",
+    "tech_stack": "Python, Scikit-Learn, GridSearchCV, Pandas, NumPy, TensorFlow",
+    "objective": "Build an automatic credit card approval application using hyperparameter optimization and Logistic Regression.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto004",
+    "title": "Wine Quality Prediction",
+    "description": "You could assemble a wine quality prediction project, using a dataset of wine physicochemical properties, such as alcohol content, acidity, and sugar levels. By applying classification models, like logistic regression in scikit-learn, you can classify wines on a scale of 1-",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2020",
+    "tech_stack": "Python, scikit-learn, numpy, pandas, matplotlib",
+    "objective": "Predict wine quality based on physicochemical properties using classification models.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto005",
+    "title": "This project is important for industries involved in wine production and quality control, as it enables them to consistently monitor and predict wine quality, ensuring product excellence.",
+    "description": "",
+    "domain": "General Computing",
+    "year": "2024",
+    "tech_stack": "Python, Flask (fallback)",
+    "objective": "Automatic generation failed; placeholder added.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto006",
+    "title": "Store Sales",
+    "description": "Store Sales is a Kaggle getting started competition where participants train various time series models to improve their score on the leaderboard. In the project, you will be provided with store sales data, and you will clean the data, perform extensive time series analysis, feature scaling, and train the multivariate times series model. \n\nTo improve your score on the leaderboard, you can use ensembling such as Bagging and Voting Regressors. \n\nAvg sales analysis\n\nImage from  Kaggle\n\nStore Sales is a Kaggle-based project where you can look at other participants' notebooks. \n\nTo improve your understanding of time series forecasting, try applying your skill to the Stock Exchange dataset and use Facebook Prophet to train a univariate time series forecasting model. \nIntermediate Machine Learning Projects\n\nThese intermediate machine learning projects focus on data processing and training models for structured and unstructured datasets. Learn to clean, process, and augment the dataset using various statistical tools.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2021",
+    "tech_stack": "Python 3.x with Pandas, NumPy, Matplotlib, Scikit-learn, LightGBM, XGBoost, Scipy, Statsmodels, PyTorch",
+    "objective": "Perform extensive time series analysis and feature scaling on Store Sales dataset to improve multivariate time series forecasting model performance.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto007",
+    "title": "Reveal Categories Found in Data",
+    "description": "The Reveal Categories Found in Data project helps you explore customer feedback using clustering and natural language processing (NLP). You’ll organize reviews from the Google Play Store into distinct categories using K-means clustering. Understanding the common themes from customer feedback is essential for product development teams to address user pain points, improve features, and boost user satisfaction through actionable insights.\n\nTry replicating the result on a different dataset, such as the Netflix Movie dataset.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2022",
+    "tech_stack": "Python, scikit-learn, numpy, pandas,  NLTK, gensim",
+    "objective": "Clusterize Netflix movie reviews using K-means clustering to identify common themes and improve product recommendations",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto008",
+    "title": "Word Frequency in Moby Dick",
+    "description": "In the Word Frequency in Moby Dick project, you will scrape the text of Herman Melville’s Moby Dick and analyze the word frequency using Python’s nltk library. This project introduces key natural language processing (NLP) techniques and helps develop an understanding of how frequently used words reveal patterns in the text. It is a great project for literature enthusiasts, historians, or researchers interested in text mining and linguistic analysis.",
+    "domain": "General Computing",
+    "year": "2020",
+    "tech_stack": "Python, nltk, None",
+    "objective": "Analyze the word frequency of Herman Melville's Moby Dick to reveal patterns and insights.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto009",
+    "title": "Facial Recognition with Supervised Learning",
+    "description": "In the Facial Recognition with Supervised Learning project, you will build a facial recognition model using supervised learning techniques with Python and scikit-learn. The model differentiates between images of Arnold Schwarzenegger and other people. This project is important in the growing field of facial recognition technology, with broad applications in security, authentication systems, and even social media platforms where facial detection is commonly used.",
+    "domain": "Mobile / HealthTech",
+    "year": "2024",
+    "tech_stack": "Python, scikit-learn, OpenCV, ",
+    "objective": "Build a facial recognition model that can differentiate between images of Arnold Schwarzenegger and other people using supervised learning techniques.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto010",
+    "title": "Breast Cancer Detection",
+    "description": "Use the Wisconsin Breast Cancer dataset to predict whether a tumor is malignant or benign. The dataset includes details about tumor features, such as texture, perimeter, and area, and your goal is to build a classification model that predicts a diagnosis based on these characteristics.\n\nThis project is essential in healthcare applications, providing valuable insights into medical data analysis and the potential for developing diagnostic tools that can aid in early cancer detection.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2021",
+    "tech_stack": "Python, Scikit-learn, Pandas, NumPy, TensorFlow",
+    "objective": "Develop a classification model to predict whether a tumor is malignant or benign based on its features using the Wisconsin Breast Cancer dataset.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto011",
+    "title": "Speech Emotion Recognition with librosa",
+    "description": "In the Speech Emotion Recognition with Librosa project, you will process sound files using Librosa, sound file, and sklearn for the MLPClassifier to recognize emotion from sound files. \n\nYou will load and process sound files, perform feature extraction, and train the Multi-Layer Perceptron classifier model. The project will teach you the basics of audio processing so that you can advance into training a deep learning model to achieve better accuracy. \n\ndeep learning model\n\nImage from researchgate.net\nAdvanced Machine Learning Projects \n\nThese advanced machine learning projects focus on building and training deep learning models and processing unstructured datasets. You will train convolutional neural networks, gated recurrent units, finetune large language models, and reinforcement learning models.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2024",
+    "tech_stack": "Python, Librosa, Scikit-Learn, TensorFlow, Keras",
+    "objective": "Train a deep learning model to recognize speech emotions using convolutional neural networks and gated recurrent units for improved accuracy.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto012",
+    "title": "Build Rick Sanchez Bot Using Transformers",
+    "description": "In the Build Rick Sanchez Bot Using Transformers project, you will use DialoGPT and the Hugging Face Transformer library to build your AI-powered chatbot. \n\nYou will process and transform your data, build and finetune Microsoft’s Large-scale Pretrained Response Generation Model (DialoGPT) on Rick and Morty dialogues dataset. You can also create a simple Gradio app to test your model in real-time: Rick & Morty Block Party. \n\nMorty dialogues dataset",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2020",
+    "tech_stack": "Hugging Face Transformers, Gradio, DialoGPT, TensorFlow, Python",
+    "objective": "Build a conversational AI chatbot using DialoGPT and fine-tune it on the Morty dialogues dataset to create a realistic Rick & Morty Block Party experience",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto013",
+    "title": "Building an E-Commerce Clothing Classifier Model with Keras",
+    "description": "The Building an E-Commerce Clothing Classifier Model with Keras project focuses on image classification in the context of e-commerce. You will use Keras to build a machine learning model that automates clothing classification based on images. This is relevant for improving the shopping experience by helping customers find products faster and streamlining inventory management. Accurate classification also supports personalized recommendations, boosting customer engagement and sales.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2022",
+    "tech_stack": "Keras, TensorFlow, NumPy, Pandas, OpenCV, Python, JavaScript",
+    "objective": "Build an image classification model with Keras to classify clothing based on images, improving the shopping experience and streamlining inventory management.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto014",
+    "title": "Detect Traffic Signs with Deep Learning",
+    "description": "In the Detect Traffic Signs with Deep Learning project, you will use Keras to develop a deep learning model capable of detecting traffic signs, such as stop signs and traffic lights. This technology is critical for autonomous vehicles, where quick and accurate recognition of road signals is essential for safe navigation. This project lays the groundwork for developing more advanced, safe, and reliable self-driving vehicle systems.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2024",
+    "tech_stack": "Keras, TensorFlow, OpenCV, NumPy, Python",
+    "objective": "Develop a deep learning model for detecting traffic signs to improve autonomous vehicle safety and reliability.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto015",
+    "title": "Stock Market Analysis And Forecasting Using Deep Learning",
+    "description": "In the Stock Market Analysis And Forecasting project, you will use GRUs (Gated Recurrent Unit) to build deep learning forecasting models for predicting stock prices of Amazon, IBM, and Microsoft. \n\nIn the first part, you will dive deep into times series analytics to learn about trends and seasonality of stock price, and then you will use this information to process your data and build a GRU model using PyTorch. For guidance, you can check out the code source on GitHub. \n\nNaïve Bees\n\nImage from Soham Nandi",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2023",
+    "tech_stack": "Python 3.x, PyTorch, Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn",
+    "objective": "Build a GRU model using PyTorch to forecast stock prices of Amazon, IBM, and Microsoft based on historical trends and seasonality.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto016",
+    "title": "Reinforcement Learning for Connect X",
+    "description": "Connect X is a simulation competition by Kaggle. Build an RL (Reinforcement Learning) agent to compete against other Kaggle competition participants. \n\nYou will first learn how the game works and create a dummy functional agent for a baseline. After that, you will start experimenting with various RL algorithms and model architectures. You can try building a model on Deep Q-learning or Proximal Policy Optimization algorithm.\nMachine Learning Projects for Final Year Students\n\nThe final year project requires you to spend a certain amount of time producing a unique solution. You will research multiple model architecture, use various machine learning frameworks to normalize and augment the datasets, understand the math behind the process, and write a thesis based on your results.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2022",
+    "tech_stack": "TensorFlow, PyTorch, NumPy, Pandas, OpenCV, Python, C++",
+    "objective": "Develop a deep learning-based RL agent to outperform existing competitors in the Kaggle Connect X competition, with a focus on optimizing performance through model architecture and hyperparameter tuning.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto017",
+    "title": "Multi-Lingual ASR With Transformers",
+    "description": "In the Multi-Lingual ASR model, you will fine-tune the Wave2Vec XLS-R model using Turkish audio and transcription to build an automatic speech recognition system. \n\nFirst, you will understand the audio files and text dataset, then use a text tokenizer, extract features, and process the audio files. After that, you will create a trainer, WER function, load pretrained models, tune hyperparameters, and train and evaluate the model. \n\nYou can use the Hugging Face platform to store the model weights and publish web apps to transcript speech in real-time: Streaming Urdu Asr.\n\nMulti-Lingual ASR With Transformers\n\nImage from huggingface.co",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2022",
+    "tech_stack": "PyTorch, Hugging Face Transformers, Pydub, Librosa",
+    "objective": "Fine-tune Wave2Vec XLS-R model on Turkish audio and transcription for real-time automatic speech recognition.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto018",
+    "title": "One Shot Face Stylization",
+    "description": "In the One Shot Face Stylization project, you can either modify the model to improve the results or finetune JoJoGAN on a new dataset to create your stylization application. \n\nIt will use the original image to generate a new image using GAN inversion and fine-tuning a pre-trained StyleGAN. You will understand various generative adversarial network architects. After that, you will start collecting a paired dataset to create a style of your choice. \n\nThen, with the help of a sample solution of the previous version of StyleGAN, you will experiment with the new architect to produce realistic art. \n\nStyleGAN\n\nImage was created using JoJoGAN",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2020",
+    "tech_stack": "Python, Flask (fallback)",
+    "objective": "Automatic generation failed; placeholder added.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto019",
+    "title": "H&M Personalized Fashion Recommendations",
+    "description": "In the H&M Personalized Fashion Recommendations project, you will build product recommendations based on previous transactions, customer data, and product metadata. \n\nThe project will test your NLP, CV (Computer Vision), and deep learning skills. In the first few weeks, you will understand the data and how you can use various features to come up with a baseline. \n\nThen, create a simple model that only takes the text and categorical features to predict recommendations. After that, move on to combining NLP and CV to improve your score on the leaderboard. You can also get better at understanding the problem by reviewing community discussions and code. \n\nH and m\n\nImage from H&M EDA FIRST LOOK",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2023",
+    "tech_stack": "Python, TensorFlow, NLTK, OpenCV",
+    "objective": "Develop a personalized fashion recommendation system using text and categorical features to improve customer satisfaction and increase sales at H&M.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto020",
+    "title": "Reinforcement Learning Agent for Atari 2600",
+    "description": "In the MuZero for Atari 2600 project, you will build, train, and validate the reinforcement learning agent using the MuZero algorithm for Atari 2600 games. Read the tutorial to understand more about the MuZero algorithm.  \n\nThe goal is to build a new or modify existing architecture to improve the score on a global leaderboard. It will take more than three months to understand how the algorithm works in reinforcement learning. \n\nThis project is math-heavy and requires you to have Python expertise. You can find proposed solutions, but to achieve top rank in the world, you have to build your solution.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2023",
+    "tech_stack": "TensorFlow, PyTorch, gym, numpy, scipy, Python, Jupyter Notebook, Visual Studio Code",
+    "objective": "Design, implement, and train a reinforcement learning agent using the MuZero algorithm for Atari 2600 games to achieve top rank on the global leaderboard.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto021",
+    "title": "MLOps End-To-End Machine Learning",
+    "description": "The MLOps End-To-End Machine Learning project is necessary for you to get hired by top companies. Nowadays, recruiters are looking for ML engineers who can create end-to-end systems using MLOps tools, data orchestration, and cloud computing. \n\nIn this project, you will build and deploy a location image classifier using TensorFlow, Streamlit, Docker, Kubernetes, cloudbuild, GitHub, and Google Cloud. The main goal is to automate building and deploying machine learning models into production using CI/CD. For guidance, read Machine Learning, Pipelines, Deployment, and MLOps tutorial. \n\nLocation image classifier\n\nImage from Senthil E\nMachine Learning Projects for Portfolio Building\n\nFor building your machine learning portfolio, you need projects that stand out. Show the hiring manager or recruiter that you can write code in multiple languages, understand various machine learning frameworks, solve unique problems using machine learning, and understand the end-to-end machine learning ecosystem.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2020",
+    "tech_stack": "TensorFlow, Streamlit, Docker, Kubernetes, scikit-learn, numpy, pandas, matplotlib, seaborn, Keras, Google Cloud Platform",
+    "objective": "Build and deploy a location image classifier using TensorFlow and Streamlit to automate building and deploying machine learning models into production using CI/CD pipelines.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto022",
+    "title": "BERT Text Classifier on Tensor Processing Unit",
+    "description": "In the BERT Text Classifier project, you will use the large language model and fine-tune it on the Arabizi language using TPU (Tensor Processing Unit). You will learn to process text data using TensorFlow, modify the model architecture to get better results, and train it using Google’s TPUs. It will reduce your training time by 10X compared to GPUs. \n\nBERT Text Classifier\n\nImage from Hugging Face",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2021",
+    "tech_stack": "TensorFlow, Hugging Face Transformers, TPU (Tensor Processing Unit), Python",
+    "objective": "Fine-tune BERT on Arabizi language using TPU to achieve 10X reduced training time compared to GPUs.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto023",
+    "title": "Image Classification Using Julia",
+    "description": "In the Image Classification Using FastAI.jl project, you will use Julia, which is designed for high-performance machine learning tasks to create simple image classification. You will learn a new language and a machine learning framework called FastAI. \n\nYou will also learn about FastAI API to process and visualize the imagenette2–160 datasets, load the ResNet18 pretrained model and train it using GPU. This project will open a new world for you to explore and develop deep learning solutions using Julia. \n\nImage Classification\n\nImage from Author",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2023",
+    "tech_stack": "Julia, FastAI.jl, GPU acceleration",
+    "objective": "Train a ResNet18 model on the ImageNet dataset to achieve high accuracy in image classification.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto024",
+    "title": "Image Caption Generator",
+    "description": "In the Image Caption Generator project, you will use Pytorch to build CNN and LSTM models to create image caption generators. You will learn to process text and image data, build a CNN encoder and RNN decoder, and train it on tuned hyperparameters. \n\nTo build the best caption generator, you need to learn about encoder-decoder architecture, NLP, CNN, LSTM, and experience in creating trainer and validation functions using Pytorch. \n\nImage Caption Generator\n\nImage from Automatic Image Captioning Using Deep Learning",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2024",
+    "tech_stack": "PyTorch, Transformers, PIL, torchvision, Python",
+    "objective": "Build a CNN and LSTM model using PyTorch to generate realistic image captions by leveraging the encoder-decoder architecture, NLP concepts, and optimal hyperparameters.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto025",
+    "title": "Generate Music using Neural Networks",
+    "description": "In the Generate Music project, you will use Music21 and Keras to build the LSTM model for generating music. You will learn about MIDI files, Notes, and Chords and train the LSTM model using MIDI files. \n\nYou will also learn to create model architecture, checkpoints, and loss functions and learn to predict notes using random input. The main goal is to use MIDI files to train neural networks, extract output from the model, and convert them into the MP3 music file. \n\nGenerate Music",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2021",
+    "tech_stack": "Python, Music21, Keras, TensorFlow",
+    "objective": "Train an LSTM model using MIDI files to generate realistic music and convert output into MP3 files.",
+    "source": "ISE-dept"
+  }
+]

@@ -1,0 +1,119 @@
+/* Specialized Typography & REFINED 2+1 Layout */
+
+.llm-root {
+    font-family: 'Inter', sans-serif;
+    color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* --- THE MAIN CARD --- */
+.llm-main-card {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.llm-card-header-v2 {
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.llm-card-icon-v2 {
+    font-size: 24px;
+    background: #fff;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.llm-card-title-v2 h6 {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #4361ee;
+    letter-spacing: 0.1em;
+}
+
+.llm-card-title-v2 h4 {
+    margin: 2px 0 0 0;
+    font-size: 19px;
+    font-weight: 900;
+    color: #0f172a;
+}
+
+/* --- THE 2+1 GRID SYSTEM --- */
+.llm-2-plus-1-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+}
+
+/* Cell Styling */
+.llm-grid-cell {
+    padding: 24px;
+    border: 1px solid #f1f5f9;
+}
+
+/* Make the 3rd section (Suggestions) span both columns */
+.llm-grid-cell:nth-child(3) {
+    grid-column: 1 / -1;
+    background: #fcfdfe;
+    border-top: 2px solid #e2e8f0;
+}
+
+/* Header for each box */
+.llm-cell-title {
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    color: #475569 !important;
+    text-transform: uppercase;
+    margin-bottom: 12px !important;
+}
+
+/* --- THE TABLE ROWS --- */
+.llm-table-rows {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.llm-table-rows li {
+    background: #ffffff;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.llm-table-rows li:nth-child(even) { background: #fbfcfe; }
+.llm-table-rows li:last-child { border-bottom: none; }
+
+.li-content {
+    padding: 10px 14px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.li-content strong {
+    color: #0f172a;
+    font-weight: 800;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .llm-2-plus-1-grid { grid-template-columns: 1fr; }
+    .llm-grid-cell:nth-child(3) { grid-column: auto; }
+}

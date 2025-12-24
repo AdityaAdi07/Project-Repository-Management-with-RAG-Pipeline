@@ -1,0 +1,162 @@
+1. Homomorphic Encryption Data Analytics Platform 
+
+Imagine if a company could analyze sensitive information, such as hospital records and bank transactions, without ever viewing the information. This is exactly what we can do with homomorphic encryption; it's like having a magic calculator that can do math over locked numbers.
+
+Project Description
+
+In this project, you will create a platform that allows a user to upload some encrypted data to it. The server then does some computations on the data – without decrypting – and provides a result back the user, if attackers breach the server they will only see information that is nonsensical.
+
+How do we accomplish this?
+
+1. Encrypt your data with a homomorphic encryption library.
+
+2. Upload that encrypted data to a cloud server.
+
+3. Perform some simple analytics on that encrypted data (sum or average) from the cloud server.
+
+4. Decrypt the final answer on your own computer to see the real result.
+
+Tech Stack
+
+Language: Python or C++
+
+Libraries: Microsoft SEAL, PALISADE
+
+Frameworks: Flask (for web), Docker (for isolation)
+
+Implications
+
+Overall, this project illustrates that there can be a place for privacy and analytics to coexist. This is a slow and computationally expensive process, but I believe it is one of the largest steps forward for safe private data sharing in finance, health, and government.
+2. Secure Multi-party Computation (MPC) for Shared Learning
+
+At this moment, data is incredibly valuable—however, most organizations do not want to share their data. But what if an organization could train an AI model together without sharing privately identifiable data? That's where Secure Multi-Party Computation (MPC) comes in. MPC technology allows various organizations work together without revealing their private data.
+
+Project Description
+
+In this project, you will create a simulation of how companies can cooperate safely. You will build a small scale system that has multiple datasets (one dataset from a bank, or a hospital, etc.) being used to train one AI model where each dataset is kept private, but they all work toward the same goal. This gives you an insight into how privacy-preserving machine learning is performed settings where sensitive data is involved.
+
+How do we accomplish it?
+
+    Pick an AI model (for example, predicting credit risk).
+    Split the training on several participants.
+    Utilize an MPC library to protect computations.
+    Combine results to generate one global AI model.
+
+Tech Stack
+
+Programming languages: Python, Rust
+
+Libraries: MP-SPDZ, TensorFlow Federated
+
+Tools: gRPC (for data exchange), Docker
+
+Implications
+
+This technology is being used in sensitive applications, such as banking or healthcare, where privacy is more important than speed. It is an important step towards a future of trustless AI collaboration.
+3. Post-Quantum VPN Using Lattice Cryptography
+
+Quantum computers are highly powerful — so powerful, in fact, they can break current encryption in seconds.
+
+This project builds a VPN that's "future-proof," that quantum computers can't hack.
+
+Project Description
+
+A VPN creates a secure tunnel for data; you will build one that uses existing post-quantum encryption algorithms resistant to future attacks.
+
+How do we accomplish it?
+
+    Research post-quantum cryptography (Kyber, NTRU, or Falcon).
+    Replace standard RSA or ECC encryption in OpenVPN/WireGuard with a quantum-safe version.
+    Benchmark performance and latency.
+    Build a small UI to manage VPN connections.
+
+Tech Stack
+
+Libraries: Open Quantum Safe, liboqs
+
+Platforms: Linux networking stack
+
+Languages: C, Python
+
+Implications
+
+Quantum-safe VPNs are critical for any government or corporate security model that is building for the next decade. It is cutting-edge and computationally heavy — but a real defense against threats we will face in the future.
+4. Memory-Safe Microkernel with Formal Verification
+
+Many cyberattacks begin because of small programming errors—like buffer overflows or memory leaks. This project is developing an operation system kernel that is mathematically proven to be secure.
+
+Project Description
+
+A microkernel is the minimal core of an operating system. You will write it in a memory-safe language and then demonstrate via mathematical logic that it cannot crash or be hacked.
+
+How do we accomplish it?
+
+    Design a simple kernel in RUST or SPARK Ada.
+    Then, verify logic properties using Coq or Isabelle.
+    Run and test it on RISC-V hardware or a QEMU emulator.
+    Demonstrate proofs of stability and security.
+
+Tech Stack
+
+Languages: RUST and SPARK Ada
+
+Proof Tools: Coq, Isabelle
+
+Hardware: RISC-V
+
+Implications
+
+This is one of the hardest yet most rewarding projects, creating software that by design cannot fail. This verification is used by governments and aerospace companies for their critical systems.
+5. Hardware Root-of-Trust Using Physical Unclonable Functions (PUFs)
+
+Every electronic device requires a distinct signature that authenticates it as legitimate. The project applies the concept of providing that signature in terms of the physical characteristics of the hardware.
+
+Project Description
+
+You build a system that will provide a unique identifier for each device utilizing PUFs (physically unclonable functions) – random inconsistencies in the structure of devices that even the manufacturers can't replicate.
+
+How to accomplish it?
+
+    Integrate PUF sensors into a RISC-V chip.
+    Derive encryption keys from PUF responses.
+    Leverage those keys for secure boot and attestation.
+    Finally, you build a small interface that allows for verification and authenticity.
+
+Tech Stack
+
+Hardware: RISC-V, FPGA
+
+Software: TPM, Secure Boot Firmware
+
+Languages: C/C++, Verilog
+
+Implications
+
+This is a much required solution fo maintaining hardware authenticity, and reducing the risk for counterfeit or cloned devices. Critical for defense, automotive, or IoT industries.
+6. One-Way Diode for Critical Infrastructure 
+
+In locations such as power stations or airports, data must flow out but never flow in, to avert remote hacking. This project builds a hardware-based one-way data tunnel, called a diode.
+
+Project Description
+
+It allows system to be monitored and reported but prevents external control—providing complete separation of any control of the system.
+
+How to accomplish it?
+
+    Create a one-way data communication circuit.
+    Put it in between a secure network and a network that is not secure.
+    Set up software to send logs outward.
+    Verify zero inbound flow through tests.
+
+Tech Stack
+
+Hardware: FPGA, microcontrollers
+
+Protocols: MQTT, Modbus, TCP/IP
+
+Tools: Wireshark (for testing)
+
+Implications
+
+A data diode acts as a digital one-way mirror that permits safe monitoring of industrial systems from remote intrusions with total risk avoidance of system control.
+

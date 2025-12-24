@@ -1,0 +1,184 @@
+1. Predict Energy Consumption
+
+In the Predict Energy Consumption project, you will use regression and machine learning models to predict daily power consumption based on temporal factors like time of day and temperature. The goal is to uncover patterns that can optimize energy usage, improving efficiency and reducing costs. This is particularly important for utilities and businesses aiming to reduce operational expenses, promote energy conservation, and better manage their resources in a more sustainable way.
+
+The Predict Energy Consumption project is a guided project, but you can replicate the objectives on a different dataset, such as Seoul's Bike Sharing Demand. Working on a completely new dataset will help you with code debugging and improve your problem-solving skills.
+2. Predict Insurance Charges
+
+In the From Data to Dollars - Predicting Insurance Charges project, you step into the role of a Data Scientist at a health insurance company. You will build a predictive model to estimate the insurance charges based on a client's attributes, such as age and health factors. This project offers a practical application of machine learning in business, enabling more accurate pricing models and helping companies manage risk while delivering personalized pricing strategies to clients. 
+
+The Predicting Insurance Charges is a guided project. You can replicate the result on a different dataset, such as the Hotel Booking Demand one. You can use it to predict whether a customer will cancel the booking or not.
+3. Predic Credit Card Approvals
+
+In the Predicting Credit Card Approvals project, you will build an automatic credit card approval application using hyperparameter optimization and Logistic Regression. 
+
+You will apply the skill of handling missing values, processing categorical features, feature scaling, dealing with unbalanced data, and performing automatic hyperparameter optimization using GridCV. This project will push you out of the comfort zone of handling simple and clean data. 
+
+Credit Card Approvals
+
+Image by Author
+
+Predicting Credit Card Approvals is a guided project. You can replicate the result on a different dataset, such as the Loan Data from LendingClub.com. You can use it to build an automatic loan approval predictor.
+4. Wine Quality Prediction
+
+You could assemble a wine quality prediction project, using a dataset of wine physicochemical properties, such as alcohol content, acidity, and sugar levels. By applying classification models, like logistic regression in scikit-learn, you can classify wines on a scale of 1-10.
+
+This project is important for industries involved in wine production and quality control, as it enables them to consistently monitor and predict wine quality, ensuring product excellence.
+5. Store Sales 
+
+Store Sales is a Kaggle getting started competition where participants train various time series models to improve their score on the leaderboard. In the project, you will be provided with store sales data, and you will clean the data, perform extensive time series analysis, feature scaling, and train the multivariate times series model. 
+
+To improve your score on the leaderboard, you can use ensembling such as Bagging and Voting Regressors. 
+
+Avg sales analysis
+
+Image from  Kaggle
+
+Store Sales is a Kaggle-based project where you can look at other participants' notebooks. 
+
+To improve your understanding of time series forecasting, try applying your skill to the Stock Exchange dataset and use Facebook Prophet to train a univariate time series forecasting model. 
+Intermediate Machine Learning Projects
+
+These intermediate machine learning projects focus on data processing and training models for structured and unstructured datasets. Learn to clean, process, and augment the dataset using various statistical tools.
+6. Reveal Categories Found in Data
+
+The Reveal Categories Found in Data project helps you explore customer feedback using clustering and natural language processing (NLP). You’ll organize reviews from the Google Play Store into distinct categories using K-means clustering. Understanding the common themes from customer feedback is essential for product development teams to address user pain points, improve features, and boost user satisfaction through actionable insights.
+
+Try replicating the result on a different dataset, such as the Netflix Movie dataset.
+7. Word Frequency in Moby Dick
+
+In the Word Frequency in Moby Dick project, you will scrape the text of Herman Melville’s Moby Dick and analyze the word frequency using Python’s nltk library. This project introduces key natural language processing (NLP) techniques and helps develop an understanding of how frequently used words reveal patterns in the text. It is a great project for literature enthusiasts, historians, or researchers interested in text mining and linguistic analysis.
+8. Facial Recognition with Supervised Learning
+
+In the Facial Recognition with Supervised Learning project, you will build a facial recognition model using supervised learning techniques with Python and scikit-learn. The model differentiates between images of Arnold Schwarzenegger and other people. This project is important in the growing field of facial recognition technology, with broad applications in security, authentication systems, and even social media platforms where facial detection is commonly used.
+9. Breast Cancer Detection
+
+Use the Wisconsin Breast Cancer dataset to predict whether a tumor is malignant or benign. The dataset includes details about tumor features, such as texture, perimeter, and area, and your goal is to build a classification model that predicts a diagnosis based on these characteristics.
+
+This project is essential in healthcare applications, providing valuable insights into medical data analysis and the potential for developing diagnostic tools that can aid in early cancer detection.
+10. Speech Emotion Recognition with librosa
+
+In the Speech Emotion Recognition with Librosa project, you will process sound files using Librosa, sound file, and sklearn for the MLPClassifier to recognize emotion from sound files. 
+
+You will load and process sound files, perform feature extraction, and train the Multi-Layer Perceptron classifier model. The project will teach you the basics of audio processing so that you can advance into training a deep learning model to achieve better accuracy. 
+
+deep learning model
+
+Image from researchgate.net
+Advanced Machine Learning Projects 
+
+These advanced machine learning projects focus on building and training deep learning models and processing unstructured datasets. You will train convolutional neural networks, gated recurrent units, finetune large language models, and reinforcement learning models.
+11. Build Rick Sanchez Bot Using Transformers
+
+In the Build Rick Sanchez Bot Using Transformers project, you will use DialoGPT and the Hugging Face Transformer library to build your AI-powered chatbot. 
+
+You will process and transform your data, build and finetune Microsoft’s Large-scale Pretrained Response Generation Model (DialoGPT) on Rick and Morty dialogues dataset. You can also create a simple Gradio app to test your model in real-time: Rick & Morty Block Party. 
+
+Morty dialogues dataset
+12. Building an E-Commerce Clothing Classifier Model with Keras
+
+The Building an E-Commerce Clothing Classifier Model with Keras project focuses on image classification in the context of e-commerce. You will use Keras to build a machine learning model that automates clothing classification based on images. This is relevant for improving the shopping experience by helping customers find products faster and streamlining inventory management. Accurate classification also supports personalized recommendations, boosting customer engagement and sales.
+13. Detect Traffic Signs with Deep Learning
+
+In the Detect Traffic Signs with Deep Learning project, you will use Keras to develop a deep learning model capable of detecting traffic signs, such as stop signs and traffic lights. This technology is critical for autonomous vehicles, where quick and accurate recognition of road signals is essential for safe navigation. This project lays the groundwork for developing more advanced, safe, and reliable self-driving vehicle systems.
+14. Stock Market Analysis And Forecasting Using Deep Learning
+
+In the Stock Market Analysis And Forecasting project, you will use GRUs (Gated Recurrent Unit) to build deep learning forecasting models for predicting stock prices of Amazon, IBM, and Microsoft. 
+
+In the first part, you will dive deep into times series analytics to learn about trends and seasonality of stock price, and then you will use this information to process your data and build a GRU model using PyTorch. For guidance, you can check out the code source on GitHub. 
+
+Naïve Bees
+
+Image from Soham Nandi
+15. Reinforcement Learning for Connect X
+
+Connect X is a simulation competition by Kaggle. Build an RL (Reinforcement Learning) agent to compete against other Kaggle competition participants. 
+
+You will first learn how the game works and create a dummy functional agent for a baseline. After that, you will start experimenting with various RL algorithms and model architectures. You can try building a model on Deep Q-learning or Proximal Policy Optimization algorithm.
+Machine Learning Projects for Final Year Students
+
+The final year project requires you to spend a certain amount of time producing a unique solution. You will research multiple model architecture, use various machine learning frameworks to normalize and augment the datasets, understand the math behind the process, and write a thesis based on your results. 
+16. Multi-Lingual ASR With Transformers 
+
+In the Multi-Lingual ASR model, you will fine-tune the Wave2Vec XLS-R model using Turkish audio and transcription to build an automatic speech recognition system. 
+
+First, you will understand the audio files and text dataset, then use a text tokenizer, extract features, and process the audio files. After that, you will create a trainer, WER function, load pretrained models, tune hyperparameters, and train and evaluate the model. 
+
+You can use the Hugging Face platform to store the model weights and publish web apps to transcript speech in real-time: Streaming Urdu Asr.
+
+Multi-Lingual ASR With Transformers
+
+Image from huggingface.co
+17. One Shot Face Stylization
+
+In the One Shot Face Stylization project, you can either modify the model to improve the results or finetune JoJoGAN on a new dataset to create your stylization application. 
+
+It will use the original image to generate a new image using GAN inversion and fine-tuning a pre-trained StyleGAN. You will understand various generative adversarial network architects. After that, you will start collecting a paired dataset to create a style of your choice. 
+
+Then, with the help of a sample solution of the previous version of StyleGAN, you will experiment with the new architect to produce realistic art. 
+
+StyleGAN
+
+Image was created using JoJoGAN
+18. H&M Personalized Fashion Recommendations
+
+In the H&M Personalized Fashion Recommendations project, you will build product recommendations based on previous transactions, customer data, and product metadata. 
+
+The project will test your NLP, CV (Computer Vision), and deep learning skills. In the first few weeks, you will understand the data and how you can use various features to come up with a baseline. 
+
+Then, create a simple model that only takes the text and categorical features to predict recommendations. After that, move on to combining NLP and CV to improve your score on the leaderboard. You can also get better at understanding the problem by reviewing community discussions and code. 
+
+H and m
+
+Image from H&M EDA FIRST LOOK
+19. Reinforcement Learning Agent for Atari 2600
+
+In the MuZero for Atari 2600 project, you will build, train, and validate the reinforcement learning agent using the MuZero algorithm for Atari 2600 games. Read the tutorial to understand more about the MuZero algorithm.  
+
+The goal is to build a new or modify existing architecture to improve the score on a global leaderboard. It will take more than three months to understand how the algorithm works in reinforcement learning. 
+
+This project is math-heavy and requires you to have Python expertise. You can find proposed solutions, but to achieve top rank in the world, you have to build your solution.
+20. MLOps End-To-End Machine Learning
+
+The MLOps End-To-End Machine Learning project is necessary for you to get hired by top companies. Nowadays, recruiters are looking for ML engineers who can create end-to-end systems using MLOps tools, data orchestration, and cloud computing. 
+
+In this project, you will build and deploy a location image classifier using TensorFlow, Streamlit, Docker, Kubernetes, cloudbuild, GitHub, and Google Cloud. The main goal is to automate building and deploying machine learning models into production using CI/CD. For guidance, read Machine Learning, Pipelines, Deployment, and MLOps tutorial. 
+
+Location image classifier
+
+Image from Senthil E
+Machine Learning Projects for Portfolio Building
+
+For building your machine learning portfolio, you need projects that stand out. Show the hiring manager or recruiter that you can write code in multiple languages, understand various machine learning frameworks, solve unique problems using machine learning, and understand the end-to-end machine learning ecosystem. 
+21. BERT Text Classifier on Tensor Processing Unit 
+
+In the BERT Text Classifier project, you will use the large language model and fine-tune it on the Arabizi language using TPU (Tensor Processing Unit). You will learn to process text data using TensorFlow, modify the model architecture to get better results, and train it using Google’s TPUs. It will reduce your training time by 10X compared to GPUs. 
+
+BERT Text Classifier
+
+Image from Hugging Face
+22. Image Classification Using Julia
+
+In the Image Classification Using FastAI.jl project, you will use Julia, which is designed for high-performance machine learning tasks to create simple image classification. You will learn a new language and a machine learning framework called FastAI. 
+
+You will also learn about FastAI API to process and visualize the imagenette2–160 datasets, load the ResNet18 pretrained model and train it using GPU. This project will open a new world for you to explore and develop deep learning solutions using Julia. 
+
+Image Classification
+
+Image from Author
+23. Image Caption Generator
+
+In the Image Caption Generator project, you will use Pytorch to build CNN and LSTM models to create image caption generators. You will learn to process text and image data, build a CNN encoder and RNN decoder, and train it on tuned hyperparameters. 
+
+To build the best caption generator, you need to learn about encoder-decoder architecture, NLP, CNN, LSTM, and experience in creating trainer and validation functions using Pytorch. 
+
+Image Caption Generator
+
+Image from Automatic Image Captioning Using Deep Learning
+24. Generate Music using Neural Networks
+
+In the Generate Music project, you will use Music21 and Keras to build the LSTM model for generating music. You will learn about MIDI files, Notes, and Chords and train the LSTM model using MIDI files. 
+
+You will also learn to create model architecture, checkpoints, and loss functions and learn to predict notes using random input. The main goal is to use MIDI files to train neural networks, extract output from the model, and convert them into the MP3 music file. 
+
+Generate Music

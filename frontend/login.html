@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login · RVCE DBMS Portal</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script src="./assets/app.js"></script>
+    <script src="./assets/rvce-portal.js"></script>
+    <script>
+        (function() {
+            let redirecting = false;
+            let sessionCheckDone = false;
+            
+            function checkSessionOnce() {
+                // Only check once
+                if (sessionCheckDone || redirecting) return;
+                sessionCheckDone = true;
+                
+                // Wait for script to load
+                if (!window.RVCEPortal || !window.RVCEPortal.loadSession) {
+                    // Retry after a short delay
+                    setTimeout(checkSessionOnce, 100);
+                    return;
+                }
+                
+                try {
+                    const session = window.RVCEPortal.loadSession();
+                    if (session?.token) {
+                        redirecting = true;
+                        let target = "./dashboard.html";
+                        if (window.RAGApp?.getSession) {
+                            const local = window.RAGApp.getSession();
+                            if (local?.role === "teacher") {
+                                target = "./teacher.html";
+                            }
+                        }
+                        window.location.replace(target);
+                    }
+                } catch (e) {
+                    console.warn("Session check error:", e);
+                    sessionCheckDone = false; // Allow retry on error
+                }
+            }
+
+            // Wait for page to be fully interactive before checking
+            if (document.readyState === 'complete') {
+                setTimeout(checkSessionOnce, 100);
+            } else {
+                window.addEventListener('load', () => {
+                    setTimeout(checkSessionOnce, 100);
+                });
+            }
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const form = document.querySelector("#login-form");
+                const emailInput = document.querySelector("#s_mail_id");
+                const usnInput = document.querySelector("#usn");
+                const submitBtn = document.querySelector("#submit-btn");
+                const message = document.querySelector("#message");
+                const modeTip = document.querySelector("#mode-tip");
+                const loginRoleInput = document.querySelector("#login-role");
+                const modeButtons = document.querySelectorAll("[data-login-mode]");
+                const modeContext = document.querySelector("#mode-context");
+                const loginBadge = document.querySelector(".login-badge");
+
+                if (!form) return;
+
+                const loginModes = {
+                    student: {
+                        role: "student",
+                        chip: "Student Gateway · JWT Secure",
+                        emailPlaceholder: "student.is23@rvce.edu.in",
+                        idPlaceholder: "1RV23IS0011",
+                        buttonText: "Access Student Dashboard",
+                        tip: "Need help? Contact your project guide or coordinator.",
+                        contexts: [
+                            {
+                                title: "Synopsis Coach",
+                                text: "Upload draft synopsis, compare top matches, reframe scope before evaluation.",
+                            },
+                            {
+                                title: "Originality Heatmap",
+                                text: "Visualize overlap across domains, tech stacks, and objectives to avoid duplication.",
+                            },
+                            {
+                                title: "Submission Confidence",
+                                text: "Secure JWT login, audit-ready activity logs.",
+                            },
+                        ],
+                    },
+                    teacher: {
+                        role: "teacher",
+                        chip: "Faculty Gateway · JWT Secure",
+                        emailPlaceholder: "faculty.is@rvce.edu.in",
+                        idPlaceholder: "RVCE-FAC-001",
+                        buttonText: "Launch Faculty Console",
+                        tip: "Faculty access: reach out to DBMS office for account provisioning.",
+                        contexts: [
+                            {
+                                title: "Cohort Oversight",
+                                text: "Monitor similarity clusters, repeated titles, and originality alerts for each batch.",
+                            },
+                            {
+                                title: "Review Workbench",
+                                text: "Pin submissions, leave inline comments, and export AI recommendations for evaluation panels.",
+                            },
+                            {
+                                title: "Reporting Suite",
+                                text: "Generate domain-level insights, tech adoption trends, and compliance-ready summaries.",
+                            },
+                        ],
+                    },
+                };
+
+                function renderContextCards(items = []) {
+                    return items
+                        .map(
+                            ({ title, text }) => `
+                                <article>
+                                    <h4>${title}</h4>
+                                    <p>${text}</p>
+                                </article>
+                            `,
+                        )
+                        .join("");
+                }
+
+                function applyMode(mode) {
+                    const config = loginModes[mode] || loginModes.student;
+                    form.dataset.mode = mode;
+                    loginRoleInput.value = config.role;
+                    emailInput.placeholder = config.emailPlaceholder;
+                    usnInput.placeholder = config.idPlaceholder;
+                    submitBtn.innerHTML = `<span class="btn-icon">🔐</span>${config.buttonText}`;
+                    modeTip.textContent = config.tip;
+                    if (modeContext) {
+                        modeContext.innerHTML = renderContextCards(config.contexts);
+                    }
+                    modeButtons.forEach((btn) => {
+                        const isActive = btn.dataset.loginMode === mode;
+                        btn.classList.toggle("active", isActive);
+                        btn.setAttribute("aria-selected", String(isActive));
+                    });
+                    if (loginBadge) {
+                        loginBadge.textContent = config.chip;
+                    }
+                }
+
+                modeButtons.forEach((btn) => {
+                    btn.addEventListener("click", () => {
+                        applyMode(btn.dataset.loginMode);
+                    });
+                });
+
+                applyMode("student");
+
+                function setMessage(text, type = "info") {
+                    if (!message) return;
+                    if (!text) {
+                        message.hidden = true;
+                        return;
+                    }
+                    message.hidden = false;
+                    message.textContent = text;
+                    message.className = `alert ${type}`;
+                }
+
+                form.addEventListener("submit", async (event) => {
+                    event.preventDefault();
+
+                    if (redirecting) {
+                        return;
+                    }
+
+                    if (!window.RVCEPortal) {
+                        setMessage("Loading...", "info");
+                        setTimeout(() => form.dispatchEvent(new Event("submit")), 120);
+                        return;
+                    }
+
+                    const mode = form.dataset.mode || "student";
+                    const isTeacher = mode === "teacher";
+                    const loginFn = isTeacher
+                        ? window.RVCEPortal.facultyLogin
+                        : window.RVCEPortal.login;
+
+                    if (typeof loginFn !== "function") {
+                        setMessage("Preparing login gateway. Please wait…", "info");
+                        setTimeout(() => form.dispatchEvent(new Event("submit")), 120);
+                        return;
+                    }
+
+                    const emailValue = emailInput.value.trim();
+                    const idValue = usnInput.value.trim();
+
+                    if (!emailValue || !idValue) {
+                        setMessage(
+                            isTeacher
+                                ? "Faculty email and ID are required."
+                                : "Email ID and USN are required.",
+                            "error",
+                        );
+                        return;
+                    }
+
+                    const payload = isTeacher
+                        ? { f_mail_id: emailValue, fac_id: idValue }
+                        : { s_mail_id: emailValue, usn: idValue };
+
+                    submitBtn.disabled = true;
+                    submitBtn.dataset.loading = "true";
+                    setMessage(
+                        isTeacher
+                            ? "Authenticating faculty credentials..."
+                            : "Authenticating student credentials...",
+                        "info",
+                    );
+
+                    try {
+                        const sessionData = await loginFn(payload);
+                        if (window.RAGApp?.setSession) {
+                            window.RAGApp.setSession({
+                                token: sessionData.token,
+                                role: isTeacher ? "teacher" : "student",
+                                username: emailValue,
+                            });
+                        }
+                        setMessage(
+                            isTeacher
+                                ? "Faculty authentication successful. Redirecting to faculty console..."
+                                : "Authenticated. Redirecting to RVCE DBMS dashboard...",
+                            "success",
+                        );
+                        redirecting = true;
+                        const redirectTarget = isTeacher ? "./teacher.html" : "./dashboard.html";
+                        setTimeout(() => {
+                            window.location.replace(redirectTarget);
+                        }, 300);
+                    } catch (err) {
+                        setMessage(err.message || "Login failed. Please verify credentials.", "error");
+                        redirecting = false;
+                    } finally {
+                        submitBtn.disabled = false;
+                        delete submitBtn.dataset.loading;
+                    }
+                });
+            });
+        })();
+    </script>
+</head>
+<body>
+    <main>
+        <div class="login-shell">
+            <section class="login-hero">
+                <div class="hero-copy">
+                    <span class="brand-pill">RVCE DBMS · RAG Platform</span>
+                    <h1>Project Repository Management with RAG Pipeline</h1>
+                    <ul class="list-check">
+                        <li>RAG-powered semantic retrieval over 900 academic projects</li>
+                        <li>LLM similarity breakdowns with originality recommendations</li>
+                        <li>Faculty-grade analytics for trends, domains, and tech stacks</li>
+                    </ul>
+                </div>
+                <div class="hero-highlights">
+                    <article class="highlight-card">
+                        <h3>Student Focus</h3>
+                        <p>Instantly identify similar works, iterate on synopsis, and receive originality guidance before submission.</p>
+                        <ul>
+                            <li>Guided synopsis analyzer</li>
+                            <li>Recommended uniqueness levers</li>
+                            <li>Track domain saturation</li>
+                        </ul>
+                    </article>
+                    <article class="highlight-card">
+                        <h3>Faculty Insights</h3>
+                        <p>Access consolidated dashboards, repeat-title alerts, and class-level originality metrics.</p>
+                        <ul>
+                            <li>Batch-wise analytics</li>
+                            <li>Pinned follow-up actions</li>
+                            <li>Automated reporting</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="login-gateway">
+                <header class="gateway-head">
+                    <div>
+                        <span class="chip login-badge">Secure Access · JWT</span>
+                        <h2>Choose your gateway</h2>
+                    </div>
+                    <div class="mode-switch" role="tablist">
+                        <button type="button" data-login-mode="student" class="active" role="tab" aria-selected="true">Student Gateway</button>
+                        <button type="button" data-login-mode="teacher" role="tab" aria-selected="false">Faculty Gateway</button>
+                    </div>
+                </header>
+
+                <div class="mode-context" id="mode-context">
+                    <article>
+                        <h4>Synopsis Coach</h4>
+                        <p>Upload draft synopsis, compare with top matches, and reframe scope before faculty evaluation.</p>
+                    </article>
+                    <article>
+                        <h4>Submission Confidence</h4>
+                        <p>Secure JWT login, audit-ready activity logs, and one-click export of AI analysis.</p>
+                    </article>
+                </div>
+
+                <form id="login-form" class="form-grid login-form" novalidate data-mode="student">
+                    <input type="hidden" id="login-role" name="login_role" value="student" />
+                    <div class="form-field-enhanced">
+                        <label for="s_mail_id">
+                            <span class="label-icon">✉️</span>
+                            Institutional Email
+                        </label>
+                        <input id="s_mail_id" name="s_mail_id" type="email" placeholder="student.is23@rvce.edu.in" autocomplete="email" required />
+                    </div>
+                    <div class="form-field-enhanced">
+                        <label for="usn">
+                            <span class="label-icon">🆔</span>
+                            USN / Faculty ID
+                        </label>
+                        <input id="usn" name="usn" type="text" placeholder="1RV23IS0011" autocomplete="off" required />
+                    </div>
+                    <button class="primary" id="submit-btn" type="submit">
+                        <span class="btn-icon">🔐</span>
+                        Access Dashboard
+                    </button>
+                    <p class="form-tip" id="mode-tip">Need help? Contact your project guide or coordinator.</p>
+                    <div id="message" class="alert" hidden role="alert" aria-live="polite"></div>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faculty Dashboard · RVCE DBMS</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/font.css" />
+    <!-- JWT + API helpers -->
+    <script src="./assets/rvce-portal.js"></script>
+    <!-- Reuse student dashboard logic for stats / search / synopsis analyzer -->
+    <script src="./assets/dashboard.js" defer></script>
+    <!-- Faculty‑specific team / approval logic -->
+    <script src="./assets/teacher-dashboard.js" defer></script>
+</head>
+<body class="faculty-theme">
+    <header class="navbar enhanced">
+        <div class="brand">
+            <span class="brand-accent"></span>
+            <span class="brand-text">RVCE . DBMS <span class="brand-separator">|</span> RAG Platform</span>
+        </div>
+        <div class="actions">
+            <div class="user-auth-info">
+                <span class="auth-badge" title="JWT Token Authenticated">
+                    <span class="auth-icon">🔒</span>
+                    <span class="auth-status">Secure</span>
+                </span>
+                <div class="user-pill-container">
+                    <span id="user-pill" class="pill user-pill-enhanced"></span>
+                </div>
+            </div>
+            <button id="logout-btn" class="ghost logout-btn-enhanced" type="button">
+                <span class="btn-text">Logout</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-shell compact">
+        <!-- Hero -->
+        <section class="hero-banner">
+            <div class="hero-content">
+                <div class="hero-badge-wrapper">
+                    <span class="badge badge-large">
+                        <span class="badge-icon">🎓</span>
+                        Faculty Console
+                    </span>
+                </div>
+                <h1 class="hero-title">RVCE DBMS<br/>Faculty Portal</h1>
+                <p class="hero-description">
+                    Review your guided teams, inspect project details, run AI analysis, and record approvals.
+                </p>
+            </div>
+            <div class="hero-metrics">
+                <article class="metric-card metric-primary">
+                    <div class="metric-icon">👥</div>
+                    <div class="metric-content">
+                        <p class="label">Assigned Teams</p>
+                        <p class="value" id="metric-fac-teams">—</p>
+                    </div>
+            </article>
+                <article class="metric-card metric-secondary">
+                    <div class="metric-icon">✅</div>
+                    <div class="metric-content">
+                        <p class="label">Approved</p>
+                        <p class="value" id="metric-fac-approved">—</p>
+                    </div>
+                </article>
+                <article class="metric-card metric-tertiary">
+                    <div class="metric-icon">⏳</div>
+                    <div class="metric-content">
+                        <p class="label">Pending</p>
+                        <p class="value" id="metric-fac-pending">—</p>
+                </div>
+            </article>
+        </div>
+        </section>
+
+        <!-- 1–3: Team list + project details -->
+        <section class="section compact" id="faculty-teams-section">
+            <div class="section-header">
+                <div>
+                    <h2>Team overview & project status</h2>
+                    <p class="text-muted">
+                        Scroll through your teams, open their project details, run AI review, and record approval.
+                    </p>
+                </div>
+                <div id="team-list-status" class="alert" hidden></div>
+            </div>
+
+            <div class="grid-responsive">
+                <aside class="panel">
+                    <h3>Your teams</h3>
+                    <p class="text-muted">Click a team card to load its project and analysis.</p>
+                    <div id="team-list" class="card-row-scroll"></div>
+                </aside>
+            </div>
+            <div class="panel">
+                <article class="panel">
+                    <h3>Team & project detail</h3>
+                    <div id="team-detail-empty" class="empty-state">
+                        Select a team from the left to view project details and run analysis.
+                    </div>
+
+                    <div id="team-detail" hidden>
+                        <section class="detail-grid">
+                            <div class="info-card">
+                                <h4>Team overview</h4>
+                                <dl class="meta-list">
+                                    <div>
+                                        <dt>Team ID</dt>
+                                        <dd id="detail-team-id">—</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Team name</dt>
+                                        <dd id="detail-team-name">—</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Approval status</dt>
+                                        <dd><span id="detail-team-approved" class="badge">—</span></dd>
+                                    </div>
+                                </dl>
+                            </div>
+                            <div class="info-card">
+                                <h4>Project summary</h4>
+                                <dl class="meta-list">
+                                    <div>
+                                        <dt>Title</dt>
+                                        <dd id="detail-project-title">—</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Domain</dt>
+                                        <dd id="detail-project-domain">—</dd>
+                </div>
+                                    <div>
+                                        <dt>Tech stack</dt>
+                                        <dd id="detail-project-tech">—</dd>
+            </div>
+                    <div>
+                                        <dt>Objective</dt>
+                                        <dd id="detail-project-objective">—</dd>
+                    </div>
+                    <div>
+                                        <dt>Year</dt>
+                                        <dd id="detail-project-year">—</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </section>
+
+                        <!-- 5: LLM project analysis -->
+                        <section class="section compact">
+                            <div class="section-header tight">
+                                <div>
+                                    <h4>LLM project analysis</h4>
+                                    <p class="text-muted">
+                                        Uses project details from MongoDB and llama3.2 to generate faculty-style feedback.
+                                    </p>
+                                </div>
+                                <button class="secondary" id="project-analyze-btn" type="button">Run analysis</button>
+                            </div>
+                            <div id="project-llm-status" class="alert" hidden></div>
+                            <div id="project-llm-output" class="llm-text-block"></div>
+                        </section>
+
+                        <!-- 6–7: Approval slider + submit -->
+                        <section class="section compact">
+                            <div class="section-header tight">
+                                <div>
+                                    <h4>Approval</h4>
+                                    <p class="text-muted">Record your decision for this team’s project.</p>
+                    </div>
+                </div>
+                            <div class="field-group compact">
+                                <div class="form-field-inline">
+                                    <label class="switch">
+                                        <input type="checkbox" id="approval-toggle" />
+                                        <span class="slider"></span>
+                                    </label>
+                                    <span class="switch-label" id="approval-label">Mark as Approved</span>
+                                </div>
+                                <button class="primary" type="button" id="approval-submit">Save decision</button>
+                            </div>
+                            <div id="approval-status" class="alert" hidden></div>
+                        </section>
+                    </div>
+                </article>
+            
+            </div>
+
+                
+        </section>
+
+        <!-- 4: Reuse student features unchanged (stats + search + synopsis analyzer) -->
+        <section class="section compact" id="projects-section">
+            <div class="section-header">
+                <div>
+                    <h2>Repository Statistics</h2>
+                    <p class="text-muted">Live metrics from MongoDB projects collection.</p>
+                </div>
+                <div class="inline-group">
+                    <button id="refresh-summary" class="secondary" type="button">Refresh</button>
+                    <div id="summary-status" class="alert" hidden></div>
+                </div>
+            </div>
+            <div class="grid-responsive">
+                <article class="panel">
+                    <h3>Domain distribution</h3>
+                    <ul id="domain-list" class="list-compact"></ul>
+                </article>
+                <article class="panel">
+                    <h3>Popular tech stack tags</h3>
+                    <ul id="tech-list" class="tag-column"></ul>
+                </article>
+                <article class="panel">
+                    <h3>Year-wise publications</h3>
+                    <div id="year-bars" class="bar-stack"></div>
+                </article>
+            </div>
+            <div class="panel frequent-panel">
+                <div class="section-header tight">
+                    <h3>Frequently referenced projects</h3>
+                    <span class="text-muted">Top titles by occurrences</span>
+                </div>
+                <table class="table dense" id="freq-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                            <th>Domain</th>
+                            <th>Team</th>
+                            <th>Occurrences</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section compact" id="search-section">
+            <div class="section-header">
+                <div>
+                    <h2>Semantic Project Search</h2>
+                    <p class="text-muted">Search by title using vector similarity. Returns top-k matches with detailed scores.</p>
+                </div>
+                <div class="inline-group">
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-analyze" />
+                        <span class="slider"></span>
+                    </label>
+                    <span class="switch-label">Auto open details</span>
+                </div>
+            </div>
+            <form id="search-form" class="form-inline" novalidate>
+                <input id="search-query" type="text" placeholder="e.g. Instagram Reach Analysis" required />
+                <input id="search-topk" type="number" min="1" max="10" value="5" />
+                <button class="primary" id="search-btn" type="submit">Search</button>
+                <div id="search-status" class="alert" hidden></div>
+            </form>
+            <table class="table dense" id="search-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Project Title</th>
+                        <th>Domain</th>
+                        <th>Overall</th>
+                        <th>Title</th>
+                        <th>Desc</th>
+                        <th>Tech</th>
+                        <th>Objective</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section class="section compact" id="analyze-section">
+            <div class="section-header">
+                <div>
+                    <h2>AI Synopsis Analyzer</h2>
+                    <p class="text-muted">Analyze project synopsis for similarity with existing projects. Get AI-powered insights and recommendations.</p>
+                </div>
+                <button class="ghost" id="clear-analysis" type="button">Clear</button>
+            </div>
+            <form id="synopsis-form" class="synopsis-form-grid" novalidate>
+                <div class="field-group compact">
+                    <div class="form-field-enhanced">
+                        <label for="syn-title">
+                            <span class="label-icon">📝</span>
+                            Title
+                        </label>
+                        <input id="syn-title" name="title" type="text" placeholder="e.g., Plant Disease Detection using OpenCV" />
+                    </div>
+                    <div class="form-field-enhanced">
+                        <label for="syn-domain">
+                            <span class="label-icon">🏷️</span>
+                            Domain
+                        </label>
+                        <input id="syn-domain" name="domain" type="text" placeholder="e.g., Artificial Intelligence / Agriculture" />
+                    </div>
+                </div>
+                <div class="field-group compact">
+                    <div class="form-field-enhanced">
+                        <label for="syn-tech">
+                            <span class="label-icon">⚙️</span>
+                            Tech Stack
+                        </label>
+                        <input id="syn-tech" name="tech_stack" type="text" placeholder="e.g., OpenCV, Python, Image Processing" />
+                </div>
+                    <div class="form-field-enhanced">
+                        <label for="syn-objective">
+                            <span class="label-icon">🎯</span>
+                            Objective
+                        </label>
+                        <input id="syn-objective" name="objective" type="text" placeholder="e.g., Detect early plant diseases using visual analysis" />
+                </div>
+            </div>
+                <div class="form-field-enhanced">
+                    <label for="syn-description">
+                        <span class="label-icon">📄</span>
+                        Synopsis Description <span style="color: var(--danger-500);">*</span>
+                    </label>
+                    <textarea id="syn-description" name="description" rows="3" placeholder="A project that uses computer vision and image processing to detect plant leaf diseases using OpenCV. Provide a clear, concise description of your project idea..." required></textarea>
+                </div>
+                <div class="form-action-bar">
+                    <div class="form-field-inline">
+                        <label for="syn-topk">Similar projects (Top K)</label>
+                        <input id="syn-topk" name="top_k" type="number" min="3" max="10" value="5" />
+                    </div>
+                    <button class="primary" id="analyze-btn" type="submit">
+                        <span class="btn-icon">✨</span>
+                        Run AI Analysis
+                    </button>
+                </div>
+                <div id="analyze-status" class="alert" hidden></div>
+            </form>
+            <div id="analysis-output" class="panel analysis-output-panel" hidden>
+                <div class="section-header tight">
+                    <h3>Analysis Results</h3>
+                    <span id="analysis-summary" class="text-muted"></span>
+                </div>
+                <div id="analysis-body"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal used by dashboard.js (for search details) -->
+    <div class="modal-backdrop" id="modal-backdrop">
+        <div class="modal modal-lg" role="dialog" aria-modal="true">
+            <div class="modal-header">
+                <h3 id="modal-title">Project insight</h3>
+                <button class="secondary" id="modal-close" type="button">Close</button>
+            </div>
+            <div id="modal-content" class="modal-content"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+{
+    "query": "Intelligent Garbage Classification System",
+    "timestamp": "2025-11-21 17:55:25.698804",
+    "results": [
+        {
+            "id": null,
+            "title": "Handwritten Digit Recognition System",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "PyTorch, TensorFlow, OpenCV, Pillow, Python",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 31.2,
+            "sim_description": null,
+            "sim_tech_stack": 80.23,
+            "sim_objective": 24.13,
+            "doc_snippet": "Students can use image processing and machine learning to develop a system to recognize handwritten digits and deduce the relevant information. The most common database that can be used for this project is the Modified National Institute of Standards"
+        },
+        {
+            "id": null,
+            "title": "Fraud Detection System for Credit Card:",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python with TensorFlow for deep learning and scikit-learn for regression and classification, pandas and NumPy for data manipulation, and Matplotlib/Seaborn for visualization.",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 26.49,
+            "sim_description": null,
+            "sim_tech_stack": 59.02,
+            "sim_objective": 24.86,
+            "doc_snippet": "Credit card fraud is an increasing threat in the cyber world, and any project that will develop fraud detection systems is very relevant. Students working on a machine-learning-based system can handle real-time recognition of suspicious transactions."
+        },
+        {
+            "id": null,
+            "title": "Handwritten Digit Recognition Using Neural Network:",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "TensorFlow, PyTorch, Keras, OpenCV",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 25.84,
+            "sim_description": null,
+            "sim_tech_stack": 92.84,
+            "sim_objective": 8.98,
+            "doc_snippet": "A classic, yet always fresh project, handwritten digit recognition opens up neural net computer vision for students. With the MNIST database, one can train a convolutionary neural network (CNN) using a TensorFlow or PyTorch framework--to interpret di"
+        },
+        {
+            "id": null,
+            "title": "Online Payment Fraud Detection",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python 3.8+, Pandas, NumPy, matplotlib, Scikit-learn, Flask",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 21.17,
+            "sim_description": null,
+            "sim_tech_stack": 45.48,
+            "sim_objective": 22.52,
+            "doc_snippet": "This online payment fraud detection project aims to help students learn how to build a system that can identify fraudulent online transactions.  The model will work with a dataset of previous online transactions and train machine learning models to r"
+        },
+        {
+            "id": null,
+            "title": "MNIST Data",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python, NumPy, Scikit-learn, Pandas, Matplotlib, Seaborn, Plotly",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 20.94,
+            "sim_description": null,
+            "sim_tech_stack": 32.97,
+            "sim_objective": 17.36,
+            "doc_snippet": "The aim of this project is to work with the MNIST dataset that contains handwritten digit images to understand its underlying data structure.\n\nLearning outcomes: \n\n    Basic understanding of machine learning techniques and Python: Learn how machine L"
+        },
+        {
+            "id": null,
+            "title": "The applications of ML in disease and pest detection in agriculture",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "TensorFlow, PyTorch, OpenCV, scikit-image, Python, Kotlin",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 15.46,
+            "sim_description": null,
+            "sim_tech_stack": 76.32,
+            "sim_objective": 22.34,
+            "doc_snippet": "ML has the potential to revolutionize farming in many ways. ML can help in the detection of pests and diseases in crops at an early stage by analysing pictures of leaves, stems, yield, and other crop details. Pictures can be taken by phones, drones, "
+        },
+        {
+            "id": null,
+            "title": "Sarcasm detection",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python, BeautifulSoup, requests, scikit-learn, numpy, pandas, TensorFlow",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 17.85,
+            "sim_description": null,
+            "sim_tech_stack": 51.29,
+            "sim_objective": 5.0,
+            "doc_snippet": "This circles and detection project aims to help learners understand the use of natural language processing and supervised learning algorithms. This model will accurately identify sarcastic statements in the text. For that, you need to train a machine"
+        },
+        {
+            "id": null,
+            "title": "Contact tracing system",
+            "domain": "Artificial Intelligence / Data Science",
+            "tech_stack": "Python, Flask, NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn, Python",
+            "source": null,
+            "sim_whole": null,
+            "sim_title": 22.06,
+            "sim_description": null,
+            "sim_tech_stack": 46.65,
+            "sim_objective": 21.51,
+            "doc_snippet": "This project aims at tracing whether an individual was in contact with an infected person. The contact tracing system can predict whether an individual has been in close contact with an infected person based on various factors. It will assist public "
+        }
+    ],
+    "ai_analysis": "**Project Similarity Analysis Report**\n\n### Top-5 Most Similar Projects\n\n#### 1. Handwritten Digit Recognition System\n\n**Why It Was Flagged as Similar (2\u20133 crisp bullet points)**\n\n* The project involves image recognition and machine learning techniques, similar to the student's Intelligent Garbage Classification System.\n* Both projects aim to develop a system for classification or recognition of handwritten digits or waste types.\n* The use of the MNIST dataset is mentioned in both projects as a relevant database.\n\n**Exact Matching Components (point-wise)**\n\n* Title keyword overlaps:\n\t+ Handwritten Digit Recognition\n\t+ Intelligent Garbage Classification System\n* Matching description phrases:\n\t+ \"Develop a system to recognize handwritten digits\"\n\t+ \"Classify waste into biodegradable, non-biodegradable, and recyclable categories\"\n* Shared technical stack components:\n\t+ TensorFlow/Keras\n\t+ OpenCV\n* Similar objectives or problem statements:\n\t+ Recognize handwritten digits\n\t+ Classify waste types\n* Domain-level commonality:\n\t+ Computer vision\n\t+ Machine learning\n* Contextual similarity patterns:\n\t+ Use of image processing techniques\n\n**Uniqueness Enhancement Suggestions (2 actionable changes)**\n\n* Rewrite the title to focus on the specific application of handwritten digit recognition, e.g., \"Handwritten Digit Recognition for Handwriting Analysis\".\n* Alter the objective to include a unique twist, such as developing a system that can recognize handwritten digits in real-time or with high accuracy.\n\n#### 2. Fraud Detection System for Credit Card\n\n**Why It Was Flagged as Similar (2\u20133 crisp bullet points)**\n\n* The project involves machine learning and predictive analytics, similar to the student's Intelligent Garbage Classification System.\n* Both projects aim to develop a system that can identify or classify specific types of data (fraudulent transactions or waste types).\n* The use of real-time recognition is mentioned in both projects as a relevant aspect.\n\n**Exact Matching Components (point-wise)**\n\n* Title keyword overlaps:\n\t+ Fraud Detection\n\t+ Intelligent Garbage Classification System\n* Matching description phrases:\n\t+ \"Develop a system that can identify fraudulent transactions\"\n\t+ \"Classify waste into biodegradable, non-biodegradable, and recyclable categories\"\n* Shared technical stack components:\n\t+ TensorFlow/Keras\n\t+ Machine learning frameworks\n* Similar objectives or problem statements:\n\t+ Identify fraudulent transactions\n\t+ Classify waste types\n* Domain-level commonality:\n\t+ Data analysis\n\t+ Machine learning\n* Contextual similarity patterns:\n\t+ Use of predictive analytics techniques\n\n**Uniqueness Enhancement Suggestions (2 actionable changes)**\n\n* Rewrite the objective to focus on a specific type of fraud detection, such as detecting credit card transactions with high-risk features.\n* Alter the description to include a unique aspect, such as developing a system that can handle large-scale data processing.\n\n#### 3. Handwritten Digit Recognition Using Neural Network\n\n**Why It Was Flagged as Similar (2\u20133 crisp bullet points)**\n\n* The project involves neural networks and convolutional neural networks (CNNs), similar to the student's Intelligent Garbage Classification System.\n* Both projects aim to develop a system that can recognize handwritten digits or waste types using machine learning techniques.\n* The use of the MNIST dataset is mentioned in both projects as a relevant database.\n\n**Exact Matching Components (point-wise)**\n\n* Title keyword overlaps:\n\t+ Handwritten Digit Recognition\n\t+ Intelligent Garbage Classification System\n* Matching description phrases:\n\t+ \"Develop a system to recognize handwritten digits\"\n\t+ \"Classify waste into biodegradable, non-biodegradable, and recyclable categories\"\n* Shared technical stack components:\n\t+ TensorFlow/Keras\n\t+ OpenCV\n* Similar objectives or problem statements:\n\t+ Recognize handwritten digits\n\t+ Classify waste types\n* Domain-level commonality:\n\t+ Computer vision\n\t+ Machine learning\n* Contextual similarity patterns:\n\t+ Use of neural networks\n\n**Uniqueness Enhancement Suggestions (2 actionable changes)**\n\n* Rewrite the objective to focus on a specific aspect of handwritten digit recognition, such as developing a system that can recognize digits with high accuracy.\n* Alter the description to include a unique twist, such as using a different dataset or incorporating additional features.\n\n#### 4. Online Payment Fraud Detection\n\n**Why It Was Flagged as Similar (2\u20133 crisp bullet points)**\n\n* The project involves machine learning and predictive analytics, similar to the student's Intelligent Garbage Classification System.\n* Both projects aim to develop a system that can identify or classify specific types of data (fraudulent transactions or waste types).\n* The use of real-time recognition is mentioned in both projects as a relevant aspect.\n\n**Exact Matching Components (point-wise)**\n\n* Title keyword overlaps:\n\t+ Online Payment Fraud Detection\n\t+ Intelligent Garbage Classification System\n* Matching description phrases:\n\t+ \"Develop a system that can identify fraudulent transactions\"\n\t+ \"Classify waste into biodegradable, non-biodegradable, and recyclable categories\"\n* Shared technical stack components:\n\t+ TensorFlow/Keras\n\t+ Machine learning frameworks\n* Similar objectives or problem statements:\n\t+ Identify fraudulent transactions\n\t+ Classify waste types\n* Domain-level commonality:\n\t+ Data analysis\n\t+ Machine learning\n* Contextual similarity patterns:\n\t+ Use of predictive analytics techniques\n\n**Uniqueness Enhancement Suggestions (2 actionable changes)**\n\n* Rewrite the objective to focus on a specific type of fraud detection, such as detecting transactions with high-risk features.\n* Alter the description to include a unique aspect, such as developing a system that can handle large-scale data processing.\n\n#### 5. MNIST Data\n\n**Why It Was Flagged as Similar (2\u20133 crisp bullet points)**\n\n* The project involves the use of the MNIST dataset, similar to several other projects.\n* Both projects aim to develop a system that can recognize handwritten digits or waste types using machine learning techniques.\n* The use of image processing techniques is mentioned in both projects as relevant.\n\n**Exact Matching Components (point-wise)**\n\n* Title keyword overlaps:\n\t+ None\n* Matching description phrases:\n\t+ \"Work with the MNIST dataset\"\n\t+ \"Classify waste into biodegradable, non-biodegradable, and recyclable categories\"\n* Shared technical stack components:\n\t+ TensorFlow/Keras\n\t+ OpenCV\n* Similar objectives or problem statements:\n\t+ Recognize handwritten digits\n\t+ Classify waste types\n* Domain-level commonality:\n\t+ Computer vision\n\t+ Machine learning\n* Contextual similarity patterns:\n\t+ Use of image processing techniques\n\n**Uniqueness Enhancement Suggestions (2 actionable changes)**\n\n* Rewrite the objective to focus on a specific aspect of MNIST data analysis, such as developing a system that can recognize digits with high accuracy.\n* Alter the description to include a unique twist, such as incorporating additional features or using a different dataset.\n\n### GENERAL ORIGINALITY GUIDELINES (5 strong, practical points)\n\n1. **Avoid common similarity traps**: Be cautious when selecting projects that seem similar but may not offer enough unique aspects. Ensure that the project's objectives and descriptions are distinct from existing projects.\n2. **Differentiate in title, description, and objective**: Make sure to clearly differentiate your project's title, description, and objective from existing projects. Use keywords and phrases that are specific to your project's focus.\n3. **Best practices for making academically original work**:\n\t* Conduct thorough research on the topic\n\t* Develop a unique perspective or approach\n\t* Ensure that the project's objectives and descriptions are distinct from existing projects\n4. **Technical + conceptual strategies to reduce similarity**:\n\t* Use different machine learning frameworks or libraries\n\t* Incorporate additional features or datasets not used in existing projects\n\t* Focus on a specific aspect of the topic that is not well-represented in existing projects\n5. **Contextualize your project**: Consider the broader context and potential applications of your project. Ensure that your project's objectives and descriptions are relevant to real-world problems and can be applied to different domains or industries.\n\nBy following these guidelines, you can reduce similarity with existing projects and create a more original and academically sound work."
+}

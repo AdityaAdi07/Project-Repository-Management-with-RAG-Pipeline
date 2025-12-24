@@ -1,0 +1,115 @@
+[
+  {
+    "project_id": "auto001",
+    "title": "Homomorphic Encryption Data Analytics Platform",
+    "description": "Imagine if a company could analyze sensitive information, such as hospital records and bank transactions, without ever viewing the information. This is exactly what we can do with homomorphic encryption; it's like having a magic calculator that can do math over locked numbers.\n\nProject Description\n\nIn this project, you will create a platform that allows a user to upload some encrypted data to it. The server then does some computations on the data – without decrypting – and provides a result back the user, if attackers breach the server they will only see information that is nonsensical.\n\nHow do we accomplish this?",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2024",
+    "tech_stack": "Python, Flask, cryptography, pycryptodome, PostgreSQL, AWS Lambda",
+    "objective": "Develop a secure data analytics platform that enables computations on encrypted data without decryption, utilizing homomorphic encryption techniques.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto002",
+    "title": "Encrypt your data with a homomorphic encryption library.",
+    "description": "",
+    "domain": "General Computing",
+    "year": "2022",
+    "tech_stack": "Python, Flask (fallback)",
+    "objective": "Automatic generation failed; placeholder added.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto003",
+    "title": "Upload that encrypted data to a cloud server.",
+    "description": "",
+    "domain": "General Computing",
+    "year": "2021",
+    "tech_stack": "Python, Flask, AWS Lambda, Cryptography library (for encryption), Amazon S3 (for cloud storage)",
+    "objective": "Upload and store encrypted data on a secure AWS server using Python and Flask.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto004",
+    "title": "Perform some simple analytics on that encrypted data (sum or average) from the cloud server.",
+    "description": "",
+    "domain": "General Computing",
+    "year": "2024",
+    "tech_stack": "Python, TensorFlow, NumPy, Pandas, scikit-learn",
+    "objective": "Perform simple analytics on encrypted data, including sum and average calculations.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto005",
+    "title": "Decrypt the final answer on your own computer to see the real result.",
+    "description": "Tech Stack\n\nLanguage: Python or C++\n\nLibraries: Microsoft SEAL, PALISADE\n\nFrameworks: Flask (for web), Docker (for isolation)\n\nImplications\n\nOverall, this project illustrates that there can be a place for privacy and analytics to coexist. This is a slow and computationally expensive process, but I believe it is one of the largest steps forward for safe private data sharing in finance, health, and government.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2021",
+    "tech_stack": "Python, Microsoft SEAL, PALISADE, Flask",
+    "objective": "Decrypt and analyze private data to demonstrate safe sharing practices in finance, health, and government.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto006",
+    "title": "Secure Multi-party Computation (MPC) for Shared Learning",
+    "description": "At this moment, data is incredibly valuable—however, most organizations do not want to share their data. But what if an organization could train an AI model together without sharing privately identifiable data? That's where Secure Multi-Party Computation (MPC) comes in. MPC technology allows various organizations work together without revealing their private data.\n\nProject Description\n\nIn this project, you will create a simulation of how companies can cooperate safely. You will build a small scale system that has multiple datasets (one dataset from a bank, or a hospital, etc.) being used to train one AI model where each dataset is kept private, but they all work toward the same goal. This gives you an insight into how privacy-preserving machine learning is performed settings where sensitive data is involved.\n\nHow do we accomplish it?\n\n    Pick an AI model (for example, predicting credit risk).\n    Split the training on several participants.\n    Utilize an MPC library to protect computations.\n    Combine results to generate one global AI model.\n\nTech Stack\n\nProgramming languages: Python, Rust\n\nLibraries: MP-SPDZ, TensorFlow Federated\n\nTools: gRPC (for data exchange), Docker\n\nImplications\n\nThis technology is being used in sensitive applications, such as banking or healthcare, where privacy is more important than speed. It is an important step towards a future of trustless AI collaboration.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2024",
+    "tech_stack": "Python, Rust, MP-SPDZ, TensorFlow Federated, gRPC, Docker",
+    "objective": "Develop a simulation of secure multi-party computation (MPC) for shared learning, utilizing MP-SPDZ and TensorFlow Federated to train an AI model on private datasets without revealing sensitive information.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto007",
+    "title": "Post-Quantum VPN Using Lattice Cryptography",
+    "description": "Quantum computers are highly powerful — so powerful, in fact, they can break current encryption in seconds.\n\nThis project builds a VPN that's \"future-proof,\" that quantum computers can't hack.\n\nProject Description\n\nA VPN creates a secure tunnel for data; you will build one that uses existing post-quantum encryption algorithms resistant to future attacks.\n\nHow do we accomplish it?\n\n    Research post-quantum cryptography (Kyber, NTRU, or Falcon).\n    Replace standard RSA or ECC encryption in OpenVPN/WireGuard with a quantum-safe version.\n    Benchmark performance and latency.\n    Build a small UI to manage VPN connections.\n\nTech Stack\n\nLibraries: Open Quantum Safe, liboqs\n\nPlatforms: Linux networking stack\n\nLanguages: C, Python\n\nImplications\n\nQuantum-safe VPNs are critical for any government or corporate security model that is building for the next decade. It is cutting-edge and computationally heavy — but a real defense against threats we will face in the future.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2023",
+    "tech_stack": "OpenVPN, WireGuard, liboqs, Open Quantum Safe, C, Python",
+    "objective": "Develop a quantum-safe VPN using post-quantum cryptography algorithms resistant to future attacks.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto008",
+    "title": "Memory-Safe Microkernel with Formal Verification",
+    "description": "Many cyberattacks begin because of small programming errors—like buffer overflows or memory leaks. This project is developing an operation system kernel that is mathematically proven to be secure.\n\nProject Description\n\nA microkernel is the minimal core of an operating system. You will write it in a memory-safe language and then demonstrate via mathematical logic that it cannot crash or be hacked.\n\nHow do we accomplish it?\n\n    Design a simple kernel in RUST or SPARK Ada.\n    Then, verify logic properties using Coq or Isabelle.\n    Run and test it on RISC-V hardware or a QEMU emulator.\n    Demonstrate proofs of stability and security.\n\nTech Stack\n\nLanguages: RUST and SPARK Ada\n\nProof Tools: Coq, Isabelle\n\nHardware: RISC-V\n\nImplications\n\nThis is one of the hardest yet most rewarding projects, creating software that by design cannot fail. This verification is used by governments and aerospace companies for their critical systems.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2023",
+    "tech_stack": "RUST, SPARK Ada, Coq, Isabelle, RISC-V",
+    "objective": "Design a secure and stable microkernel that demonstrates mathematically proven security via formal verification on RISC-V hardware or QEMU emulator.",
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto009",
+    "title": "Hardware Root-of-Trust Using Physical Unclonable Functions (PUFs)",
+    "description": "Every electronic device requires a distinct signature that authenticates it as legitimate. The project applies the concept of providing that signature in terms of the physical characteristics of the hardware.\n\nProject Description\n\nYou build a system that will provide a unique identifier for each device utilizing PUFs (physically unclonable functions) – random inconsistencies in the structure of devices that even the manufacturers can't replicate.\n\nHow to accomplish it?\n\n    Integrate PUF sensors into a RISC-V chip.\n    Derive encryption keys from PUF responses.\n    Leverage those keys for secure boot and attestation.\n    Finally, you build a small interface that allows for verification and authenticity.\n\nTech Stack\n\nHardware: RISC-V, FPGA\n\nSoftware: TPM, Secure Boot Firmware\n\nLanguages: C/C++, Verilog\n\nImplications\n\nThis is a much required solution fo maintaining hardware authenticity, and reducing the risk for counterfeit or cloned devices. Critical for defense, automotive, or IoT industries.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2020",
+    "tech_stack": "RISC-V, FPGA, None, Verilog, TPM, Secure Boot Firmware, C/C++",
+    "objective": {
+      "brief": "Develop a hardware root-of-trust using PUFs for device authentication and secure boot.",
+      "description": "Provide a unique identifier for each device utilizing PUFs and leverage it for secure boot, attestation, and verification.",
+      "key_words": [
+        "PUFs",
+        "RISC-V",
+        "FPGA",
+        "Secure Boot"
+      ]
+    },
+    "source": "ISE-dept"
+  },
+  {
+    "project_id": "auto010",
+    "title": "One-Way Diode for Critical Infrastructure",
+    "description": "In locations such as power stations or airports, data must flow out but never flow in, to avert remote hacking. This project builds a hardware-based one-way data tunnel, called a diode.\n\nProject Description\n\nIt allows system to be monitored and reported but prevents external control—providing complete separation of any control of the system.\n\nHow to accomplish it?\n\n    Create a one-way data communication circuit.\n    Put it in between a secure network and a network that is not secure.\n    Set up software to send logs outward.\n    Verify zero inbound flow through tests.\n\nTech Stack\n\nHardware: FPGA, microcontrollers\n\nProtocols: MQTT, Modbus, TCP/IP\n\nTools: Wireshark (for testing)\n\nImplications\n\nA data diode acts as a digital one-way mirror that permits safe monitoring of industrial systems from remote intrusions with total risk avoidance of system control.",
+    "domain": "Artificial Intelligence / Data Science",
+    "year": "2022",
+    "tech_stack": "C, Python, PyFPGA, MicroPython, MQTTlib, ModbusPlus, TCP/IP Stack",
+    "objective": [
+      "Design a one-way data communication circuit using FPGA and microcontrollers.",
+      "Implement secure monitoring system with zero inbound flow through testing.",
+      "Ensure complete separation of control for critical infrastructure systems."
+    ],
+    "source": "ISE-dept"
+  }
+]
